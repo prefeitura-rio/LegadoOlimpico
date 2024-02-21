@@ -4,7 +4,7 @@
 
 <header>
 	<div class="logo">
-		<a href="https://pudding.cool" aria-label="The Pudding" target="_self"
+		<a href="https://dados.rio/" aria-label="The Pudding" target="_self"
 			>{@html logo}</a
 		>
 	</div>

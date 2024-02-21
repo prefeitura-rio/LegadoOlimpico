@@ -46,8 +46,9 @@
 <nav>
     <div class="top-nav" class:loading={loading}>
         <div class="logo" class:isHidden={$readingListVisible}>
-            <a href="https://pudding.cool" aria-label="The Pudding" target="_self">
-                <img src={logo_preto_horizontal} alt="Logo Prefeitura" />
+            <a href="https://dados.rio/" aria-label="The Pudding" target="_self">
+                <!-- <img src={logo_preto_horizontal} alt="Logo Prefeitura" /> -->
+                <img src="assets/images/logo.png" alt="Logo Prefeitura">
             </a>
         </div>
         <div class="sect-btns">

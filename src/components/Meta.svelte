@@ -1,15 +1,15 @@
 <script>
 	export let title = "Legado olímpico";
 	export let description = "Legado Olímpico";
-	export let url = "https://pudding.cool/2023/10/romance-covers";
-	export let keywords = "https://prefeitura-rio.github.io/LegadoOlimpico/";
+	export let url = "https://prefeitura-rio.github.io/LegadoOlimpico/";
+	export let keywords = "Legado olímpico, elefante branco, arquitetura nomade";
 	export let preloadFont = [];
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={description} />
-	<meta name="author" content="The Pudding" />
+	<meta name="author" content="Escritorio de Dados" />
 	<meta name="news_keywords" content={keywords} />
 
 	<meta property="og:title" content={title} />
@@ -19,17 +19,17 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_US" />
 
-	<meta property="og:image" content="{url}/assets/social/social-facebook.jpg" />
+	<!-- <meta property="og:image" content="{url}/assets/social/social-facebook.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="600" />
+	<meta property="og:image:height" content="600" /> -->
 
-	<meta name="twitter:card" content="summary_large_image" />
+	<!-- <meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="https://pudding.cool" />
 	<meta name="twitter:creator" content="@puddingviz" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image:src" content="{url}/assets/social/social-twitter.jpg" />
+	<meta name="twitter:image:src" content="{url}/assets/social/social-twitter.jpg" /> -->
 
 	<meta name="robots" content="max-image-preview:large" />
 
