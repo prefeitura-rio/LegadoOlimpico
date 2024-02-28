@@ -89,7 +89,43 @@
   "lookBackA": [
     {
       "type": "text",
-      "value": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum <br><br> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum <br><br><br> <div style='display:flex;justify-content:space-around;'> <img src=https://i.imgur.com/3Z3Z3Z3.jpg> <img src=https://i.imgur.com/3Z3Z3Z3.jpg>  <img src=https://i.imgur.com/3Z3Z3Z3.jpg> <img src=https://i.imgur.com/3Z3Z3Z3.jpg> </div> <br><br> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+      "value": "Desde o início do projeto para sediar os Jogos Olímpicos Rio 2016, a Prefeitura do Rio teve como objetivo garantir a eficiência de forma simples e econômica, deixando um \"<span style='font-weight:bold;'> legado na infraestrutura, serviços, transporte e educação </span>\" para a cidade. <br><br> "   
+     },
+    {
+      "type": "text",
+      "value": "Para alcançar esse objetivo, a preparação para os Jogos foi utilizada para acelerar mudanças há muito esperadas, capazes de melhorar a qualidade de vida dos moradores e tornar a cidade mais integrada e justa. <br><br>"
+    },
+    {
+      "type": "text",
+      "value":"Por aqui, não houve <span style='font-weight:bold;'> “Elefantes Brancos”</span> expressão comumente usada para descrever estádios construídos para grandes eventos que, após o término, acabam se tornando problemas. Estas estruturas acabam se tornando ociosas,  abandonadas pelo governo, que não consegue ou não sabe como administrar esses espaços.<br><br>"
+    },
+    {
+      "type": "text",
+      "value":"No entanto, no Rio de Janeiro, a história foi diferente.<br><br>"
+    },
+    {
+      "type": "text",
+      "value": "A Prefeitura do Rio inovou ao adotar a chamada <span style='font-weight:bold;'>arquitetura nômade</span> em grande parte do projeto olímpico. Essa abordagem, que se baseia na ideia de um povo nômade, sem moradia fixa e que se desloca constantemente, prevê o reaproveitamento das instalações para outros fins após os eventos.<br><br>"
+    },
+    {
+      "type": "text",
+      "value": "Essa escolha arquitetônica gerou <span style='font-weight:bold;'>impactos positivos</span>, não apenas ambientais, ao reutilizar as edificações e reduzir o impacto ambiental, mas também sociais, ao garantir que as estruturas fossem verdadeiramente benéficas para a população, além dos benefícios econômicos, ao criar milhares de empregos diretos e indiretos.<br><br><br>"
+    },
+    {
+      "type": "text",
+      "value": "foto2"
+    },
+    {
+      "type": "text",
+      "value": "Assim, como o brinquedo onde peças com diferentes formas e cores se tornam novas formas ao serem combinadas, a arquitetura nômade permitiu com que três grandes estruturas feitas para os Jogos pudessem se transformar em legado para a cidade. <br><br>"
+    },
+    {
+      "type": "text",
+      "value": "As estruturas são: a <span style='font-weight:bold;'>Arena do Futuro</span>, localizada na Barra da Tijuca, instalação desportiva usada para o handebol nas Olimpíadas e goalball no Jogos Paraolímpicos de 2016; o <span style='font-weight:bold;'>Estádio Aquático</span>, sede da natação e polo aquático das competições e o <span style='font-weight:bold;'>Centro Internacional de Transmissão</span> (International Broadcasting Center - IBC), local utilizado pela imprensa para transmissão dos Jogos.<br><br>"
+    },
+    {
+      "type": "text",
+      "value": "O plano de reaproveitamento das estruturas provisórias, paralisado em 2017 pela gestão anterior, foi retomado novamente em 2021 pela atual administração. Desta forma, a Prefeitura vem conseguindo aproveitar arquibancadas, louças, paredes de drywall, fachadas, coberturas, piscina e pilares, para a criação de novas estruturas para os cariocas.<br><br>"
     }
   ],
   "lookBackB": [
@@ -107,16 +143,9 @@
   "raunchinessText": [
     {
       "type": "text",
-      "value": "<br><br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-    },
-    {
-      "type": "text",
-      "value": "<br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-    },
-    {
-      "type": "text",
-      "value": "<br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      "value": "<br><br><br> Alguns dos materiais utilizados na Arena do Futuro também estão sendo  destinados a outros dois projetos. <br><br>O <span style='font-weight:bold;'>Estádio Luso-Brasileiro</span>,  que já recebeu as estruturas das arquibancadas e da cobertura. A doação permitirá aumentar a capacidade de público do local, que é de 5.044 para 16 mil espectadores. A retirada, transporte e obra serão custeadas pelo próprio clube.<br><br>Já a <span style='font-weight:bold;'>Escola de Samba Lins Imperial</span>, localizada no bairro de Lins de  Vasconcelos, recebeu a doação de isolantes acústicos para corrigir problemas de vazamento de som em sua sede."    
     }
+    
   ],
   "raunchinessScroll": [
     {
@@ -197,18 +226,7 @@
     }
   ],
   "illustrationText": [
-    {
-      "type": "text",
-      "value": "<br><br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-    },
-    {
-      "type": "text",
-      "value": "<br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-    },
-    {
-      "type": "text",
-      "value": "<br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-    }
+   
   ],
   "illustrationScroll": [
     {
@@ -283,15 +301,58 @@
   "raceText": [
     {
       "type": "text",
-      "value": "<br><br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      "value": " O <span style='font-weight:bold;'>Estádio Aquático Olímpico</span>, uma das estruturas pensadas com o conceito de arquitetura nômade para as Olimpíadas Rio 2016, também já começou a ser desmontado para dar início a outros projetos. <br><br>A mesma piscina utilizada nas competições será montada no \"<span style='font-weight:bold;'> Parque Oeste.</span>\"<br>Os frequentadores poderão usar a piscina onde o americano Michael Phelps, um dos maiores atletas da história, nadou nos Jogos. Maior medalhista da história da Olimpíada (23 ouros, três pratas e dois bronzes), o atleta conquistou seis delas nesta mesma piscina que ficará disponível para todos os cariocas.<br<br>"    },
+    {
+      "type": "text",
+      "value": "<br>O parque ficará em um terreno de mais de 234 mil metros quadrados na Avenida Cesário de Melo, em Inhoaíba. O megaparque será sustentável, preservando e oferecendo novas áreas verdes para a cidade, com equipamentos culturais e esportivos. Entre as benfeitorias estão a Vila Olímpica, Nave do Conhecimento, quadras poliesportivas, espaço ecumênico, pista de skate, ginásio coberto, palco, além de uma escola para 720 alunos e um Espaço de Desenvolvimento Infantil para cerca de 30 crianças em horário integral."
     },
     {
       "type": "text",
-      "value": "<br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      "value": "<br>Ainda serão construídos quiosques e um espaço destinado a oficinas. O projeto prevê o cultivo de 1.100 árvores e o plantio de jardins em uma área de aproximadamente 34 mil metros quadrados. A área reflorestada será de 61,8 mil metros quadrados."
     },
     {
       "type": "text",
-      "value": "<br><br> Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      "value": "<br>Outra parte das estruturas da instalação que recebeu as provas de natação dos Jogos Olímpicos e Paralímpicos Rio 2016 foi doada para o \"<span style='font-weight:bold;'>Bangu Atlético Clube. </span>\""
+    },
+    {
+      "type": "text",
+      "value": "O clube da Zona Oeste recebeu materiais que vão permitir fazer a cobertura da arquibancada, da área de transmissão, do estacionamento e das áreas de acesso aos banheiros e vestiários do Estádio Proletário Guilherme da Silveira Filho, o Moça Bonita. O Bangu ainda irá revitalizar as coberturas do estacionamento e das arquibancadas da quadra e o telhado do salão nobre de sua sede social."
+    },
+    {
+      "type": "text",
+      "value": "foto1"
+    },
+    {
+      "type": "text",
+      "value": "foto1.1"
+    },
+    {
+      "type": "text",
+      "value": "foto1.2"
+    },
+    {
+      "type": "text",
+      "value": "<br><br>E o mais novo terminal de transportes da cidade, o Terminal Intermodal Gentileza (TIG), inaugurado em fevereiro de 2024, também é produto do legado olímpico. <br> Cerca de 700 toneladas de estruturas de aço do Centro Internacional de Transmissão (International Broadcasting Center - IBC), foi utilizada para a construção do Gentileza."
+    },
+    {
+      "type": "text",
+      "value": "<br>O IBC recebeu mais de dez mil profissionais de imprensa, que trabalharam no prédio onde funcionavam estúdios e eram geradas as imagens das transmissões oficiais dos Jogos."
+    },
+    {
+      "type": "text",
+      "value": "foto3"
+    },
+    {
+      "type": "text",
+      "value": "<br><br>O Terminal Gentileza foi projetado para ser o ponto de chegada ao Rio do BRT Transbrasil, que tem demanda mínima estimada em 150 mil pessoas transportadas diariamente. No local, os passageiros podem pegar ônibus alimentadores para diversas regiões da cidade, além do VLT — que foi estendido em cerca de 700 metros a partir da Rodoviária Novo Rio — para circular no Centro do Rio e chegar à Central do Brasil, Praça XV e Aeroporto Santos Dumont e Galeão."
+    },
+    {
+      "type": "text",
+      "value": "foto4"
+    },
+    {
+      "type": "text",
+      "value": "<br><br>Visto pelo mundo, projetado para quem vive aqui. É assim que a Prefeitura do Rio vem executando as obras do legado olímpico na cidade. Garantindo que um \"<span style='font-weight:bold;'>patrimônio seja garantido ao todos os cariocas.</span>\""
     }
   ],
   "raceScroll": [

@@ -6,28 +6,53 @@
     import { activeSection } from "$stores/misc.js";
     import { fly } from 'svelte/transition';
 	import YardsaleScrolly from "./Yardsale.scrolly.svelte";
-    import img2_left from "$images/img2_left.png";
-    import img1 from "$images/img1.png";
-    import img2_right from "$images/img2_right.png";
-    import img3_right from "$images/img3_right.png";
-    import img4_right from "$images/img4_right.png";
-    import img5_right from "$images/img5_right.png";
+
+    import f01_esquerda from "$images/esquerda/f01d.jpg";
+    import f02_esquerda from "$images/esquerda/f02b.jpg";
+    import f03_esquerda from "$images/esquerda/f03.jpg";
+    import f04_esquerda from "$images/esquerda/f04.jpg";
+    import f05_esquerda from "$images/esquerda/f05.jpg";
+
+    import f01_direita from "$images/direita/f01b.jpg";
+    import f02_direita from "$images/direita/f02.jpg";
+    import f03_direita from "$images/direita/f03.jpg";
+    import f04_direita from "$images/direita/f04.jpg";
+    import f05_direita from "$images/direita/f05.jpg";
+  
     import { fade } from 'svelte/transition';
     
-    let currentImage = img2_right;
+    let currentImageEsquerda = f01_esquerda;
+    let currentImageDireita = f01_direita;
 
 	let scrollDir;
 	let lastY;
     let headlingFly = false;
 
     let scrolly1 = [
-    "1 - Lorem ipsum 1 1 - Lorem ipsum 1 1 - Lorem ipsum 1 1 - Lorem ipsum 1 ",
-    "2 - Lorem ipsum 2 2 - Lorem ipsum 2 2 - Lorem ipsum 2 2 - Lorem ipsum 2 ",
-    "3 - Lorem ipsum 3 3 - Lorem ipsum 3 3 - Lorem ipsum 3 3 - Lorem ipsum 3 ",
-    "4 - Lorem ipsum 4 4 - Lorem ipsum 4 4 - Lorem ipsum 4 4 - Lorem ipsum 4 ",
-    "5 - Lorem ipsum 5 5 - Lorem ipsum 5 5 - Lorem ipsum 5 5 - Lorem ipsum 5 ",
-    "6 - Lorem ipsum 6 6 - Lorem ipsum 6 6 - Lorem ipsum 6 6 - Lorem ipsum 6 ",
-    "7 - Lorem ipsum 7 7 - Lorem ipsum 7 7 - Lorem ipsum 7 7 - Lorem ipsum 7 "
+        "A Arena do Futuro recebeu as competições de Handebol das Olimpíadas e de Goalball nas Paralimpíadas de 2016",
+        "",
+        "",
+        "E ela não recebeu este nome à toa: o seu nome tem tudo a ver com aquilo em que ela estava destinada a se transformar. ",
+        "",
+        "",
+        "Em março de 2022, iniciou-se a desmontagem da Arena para ser transformada em quatro escolas na Zona Oeste.",
+        "",
+        "",
+        "Da Arena do Futuro foram aproveitados materiais como o breeze (fachada das arenas), divisórias e louças.",
+        "",
+        "",
+        "Dois, dos quatro ginásios previstos já foram inaugurados: o GET (Ginásio Experimental Tecnológico) José Mauro de Vasconcelos, em Bangu, e o GET Emiliano Galdino, em Santa Cruz.",
+        "",
+        "",
+        "As outras duas escolas, que estão sendo construídas no bairro de Campo Grande e Rio das Pedras, tem previsão de inauguração para o primeiro semestre deste ano.",
+        "",
+        "",
+        "As unidades de ensino possuem o modelo de escola pública mais inovador do país, que segue a abordagem STEAM (Ciência, Tecnologia, Engenharia, Artes e Matemática).",
+        "",
+        "",
+        "Esse modelo investe na qualificação da educação integral e desenvolve uma aprendizagem baseada em projetos, atividades mão na massa e recursos que promovam a cultura digital.",
+        "",
+        ""
   ]
 
     export let id;
@@ -76,19 +101,26 @@
     on:enter={() => setSectionEnter(id)}
     on:exit={() => setSectionExit(id)}>
     {#if headlingFly }
-        <h2 in:fly={{ y: 200, duration: 2000 }}>{resetTitles(id)}</h2>
+        <!-- <h2 in:fly={{ y: 200, duration: 2000 }}>{resetTitles(id)}</h2> -->
         {#if id == "raunchiness"}
             <YardsaleScrolly words={scrolly1} container="scrolly1"  />
         {/if}
         {#if id == "illustration"}
         <div class="container">
             <div class="image-container">
-                <img class="img2_left" src={img2_left} alt="img2_left" />
-                <button class="image-button" style="top: 30%; left: 20%;" on:click={() => currentImage = img1}>+</button>
-                <button class="image-button" style="top: 50%; left: 50%;" on:click={() => currentImage = img2_right}>+</button>
-                <button class="image-button" style="top: 80%; left: 80%;" on:click={() => currentImage = img2_left}>+</button>
+                <img class="img2_left" src={currentImageEsquerda} alt="img2_left" in:fade={{ delay: 0 }} out:fade />
+               <!--reseta / images iniciais-->
+                <button class="image-button" style="top: 68%; left: 63%;" on:click={() => (currentImageEsquerda = f01_esquerda) && (currentImageDireita = f01_direita)}>+</button>
+                <!--arquibancada-->
+                <button class="image-button" style="top: 53%; left: 40%;" on:click={() => (currentImageEsquerda = f05_esquerda) && (currentImageDireita = f05_direita)}>+</button>
+                <!--fachada-->
+                <button class="image-button" style="top: 65%; left: 10%;" on:click={() => (currentImageEsquerda = f04_esquerda) && (currentImageDireita = f04_direita)}>+</button>
+                <!--drywall-->
+                <button class="image-button" style="top: 77%; left: 30%;" on:click={() => (currentImageEsquerda = f03_esquerda) && (currentImageDireita = f03_direita)}>+</button>
+               <!--louças-->
+                <button class="image-button" style="top: 53%; left: 90%;" on:click={() => (currentImageEsquerda = f02_esquerda) && (currentImageDireita = f02_direita)}>+</button>
             </div>
-            <img src={currentImage} alt="currentImage" in:fade={{ delay: 0 }} out:fade />
+            <img src={currentImageDireita} alt="currentImage" in:fade={{ delay: 0 }} out:fade />
         </div>
         {/if}
     {/if}
@@ -126,15 +158,15 @@
 
 .image-button {
   position: absolute;
-  width: 15px; 
-  height: 15px; 
+  width: 30px; 
+  height: 30px; 
   border-radius: 50%;
-  background-color: red;
+  background-color: black;
   text-align: center;
   padding: 0;
   border: none;
   color: white;
-  font-size: 10px; 
+  font-size: 20px; 
 }
 
 @media (max-width: 600px) {

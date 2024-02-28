@@ -24,397 +24,83 @@
 	// Keyframes for each stage
 	const stageLookup = {
 		"scrolly1-0": [
-			{
-				image: "pawnshop",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 105,
-				opacity: 1
-			},
-			// {
-			// 	image: "watch-zoom",
-			// 	xmetric: "left",
-			// 	x: 0,
-			// 	ymetric: "top",
-			// 	y: 0,
-			// 	width: 105,
-			// 	opacity: 0
-			// },
-			{
-				image: "phone",
-				xmetric: "left",
-				x: -50,
-				ymetric: "top",
-				y: 20,
-				width: 30,
-				opacity: 0
-			},
-			{
-				image: "plus-minus1",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 105,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom2",
-			// 	xmetric: "left",
-			// 	x: -20,
-			// 	ymetric: "top",
-			// 	y: -20,
-			// 	width: 140,
-			// 	opacity: 0
-			// }
-		],
+			{"image":"f01", "xmetric":"left", "x":0, "ymetric": "top", "y":0, "width": 105, "opacity": 1}
+			],
 		"scrolly1-1": [
-			{
-				image: "pawnshop",
-				xmetric: "left",
-				x: -20,
-				ymetric: "top",
-				y: -20,
-				width: 140,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom",
-			// 	xmetric: "left",
-			// 	x: -20,
-			// 	ymetric: "top",
-			// 	y: -20,
-			// 	width: 140,
-			// 	opacity: 1
-			// },
-			{
-				image: "phone",
-				xmetric: "left",
-				x: 10,
-				ymetric: "top",
-				y: 20,
-				width: 30,
-				opacity: 1
-			},
-			{
-				image: "plus-minus1",
-				xmetric: "left",
-				x: -20,
-				ymetric: "top",
-				y: -20,
-				width: 140,
-				opacity: 0
-			},
-			{
-				image: "watch-zoom2",
-				xmetric: "left",
-				x: -100,
-				ymetric: "top",
-				y: -20,
-				width: 140,
-				opacity: 0
-			}
-		],
+			{"image":"f02", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
 		"scrolly1-2": [
-			{
-				image: "pawnshop",
-				xmetric: "left",
-				x: -20,
-				ymetric: "top",
-				y: -20,
-				width: 140,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom",
-			// 	xmetric: "left",
-			// 	x: -20,
-			// 	ymetric: "top",
-			// 	y: -20,
-			// 	width: 140,
-			// 	opacity: 1
-			// },
-			{
-				image: "phone",
-				xmetric: "left",
-				x: -50,
-				ymetric: "top",
-				y: 20,
-				width: 30,
-				opacity: 0
-			},
-			{
-				image: "plus-minus1",
-				xmetric: "left",
-				x: -20,
-				ymetric: "top",
-				y: -20,
-				width: 140,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom2",
-			// 	xmetric: "left",
-			// 	x: -20,
-			// 	ymetric: "top",
-			// 	y: -20,
-			// 	width: 140,
-			// 	opacity: 1
-			// },
-			// {
-			// 	image: "plus-minus2",
-			// 	xmetric: "left",
-			// 	x: -20,
-			// 	ymetric: "top",
-			// 	y: -20,
-			// 	width: 140,
-			// 	opacity: 0
-			// }
-		],
+			{"image":"f03", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
 		"scrolly1-3": [
-			{
-				image: "pawnshop",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 100,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom",
-			// 	xmetric: "left",
-			// 	x: 5,
-			// 	ymetric: "top",
-			// 	y: 5,
-			// 	width: 90,
-			// 	opacity: 0
-			// },
-			{
-				image: "phone",
-				xmetric: "left",
-				x: -50,
-				ymetric: "top",
-				y: 20,
-				width: 30,
-				opacity: 0
-			},
-			{
-				image: "plus-minus1",
-				xmetric: "left",
-				x: 5,
-				ymetric: "top",
-				y: 5,
-				width: 90,
-				opacity: 1
-			},
-			// {
-			// 	image: "watch-zoom2",
-			// 	xmetric: "left",
-			// 	x: 5,
-			// 	ymetric: "top",
-			// 	y: 5,
-			// 	width: 90,
-			// 	opacity: 0
-			// },
-			// {
-			// 	image: "plus-minus2",
-			// 	xmetric: "left",
-			// 	x: 5,
-			// 	ymetric: "top",
-			// 	y: 5,
-			// 	width: 90,
-			// 	opacity: 0
-			// }
-		],
+			{"image":"f04", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
 		"scrolly1-4": [
-			{
-				image: "pawnshop",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 100,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom",
-			// 	xmetric: "left",
-			// 	x: 0,
-			// 	ymetric: "top",
-			// 	y: 0,
-			// 	width: 100,
-			// 	opacity: 0
-			// },
-			{
-				image: "phone",
-				xmetric: "left",
-				x: -50,
-				ymetric: "top",
-				y: 20,
-				width: 30,
-				opacity: 0
-			},
-			{
-				image: "plus-minus1",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 100,
-				opacity: 1
-			},
-			// {
-			// 	image: "watch-zoom2",
-			// 	xmetric: "left",
-			// 	x: -50,
-			// 	ymetric: "top",
-			// 	y: 20,
-			// 	width: 100,
-			// 	opacity: 0
-			// },
-			// {
-			// 	image: "plus-minus2",
-			// 	xmetric: "left",
-			// 	x: 0,
-			// 	ymetric: "top",
-			// 	y: 0,
-			// 	width: 100,
-			// 	opacity: 1
-			// }
-		],
+			{"image":"f05", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
 		"scrolly1-5": [
-			{
-				image: "pawnshop",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 100,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom",
-			// 	xmetric: "left",
-			// 	x: 0,
-			// 	ymetric: "top",
-			// 	y: 0,
-			// 	width: 100,
-			// 	opacity: 0
-			// },
-			{
-				image: "phone",
-				xmetric: "left",
-				x: -50,
-				ymetric: "top",
-				y: 20,
-				width: 30,
-				opacity: 0
-			},
-			{
-				image: "plus-minus1",
-				xmetric: "left",
-				x: -10,
-				ymetric: "top",
-				y: -10,
-				width: 120,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom2",
-			// 	xmetric: "left",
-			// 	x: -50,
-			// 	ymetric: "top",
-			// 	y: 20,
-			// 	width: 100,
-			// 	opacity: 0
-			// },
-			// {
-			// 	image: "plus-minus2",
-			// 	xmetric: "left",
-			// 	x: -10,
-			// 	ymetric: "top",
-			// 	y: -10,
-			// 	width: 120,
-			// 	opacity: 1
-			// },
-			{
-				image: "oligarch",
-				xmetric: "left",
-				x: -10,
-				ymetric: "top",
-				y: -10,
-				width: 120,
-				opacity: 0
-			}
-		],
+			{"image":"f06", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
 		"scrolly1-6": [
-			{
-				image: "pawnshop",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 100,
-				opacity: 0
-			},
-			// {
-			// 	image: "watch-zoom",
-			// 	xmetric: "left",
-			// 	x: 0,
-			// 	ymetric: "top",
-			// 	y: 0,
-			// 	width: 100,
-			// 	opacity: 0
-			// },
-			{
-				image: "phone",
-				xmetric: "left",
-				x: -50,
-				ymetric: "top",
-				y: 20,
-				width: 30,
-				opacity: 0
-			},
-			{
-				image: "plus-minus1",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 100,
-				opacity: 1
-			},
-			// {
-			// 	image: "watch-zoom2",
-			// 	xmetric: "left",
-			// 	x: -50,
-			// 	ymetric: "top",
-			// 	y: 20,
-			// 	width: 100,
-			// 	opacity: 0
-			// },
-			// {
-			// 	image: "plus-minus2",
-			// 	xmetric: "left",
-			// 	x: 0,
-			// 	ymetric: "top",
-			// 	y: 0,
-			// 	width: 100,
-			// 	opacity: 1
-			// },
-			{
-				image: "oligarch",
-				xmetric: "left",
-				x: 0,
-				ymetric: "top",
-				y: 0,
-				width: 100,
-				opacity: 1
-			}
-		]
+			{"image":"f07", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-7": [
+			{"image":"f08", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-8": [
+			{"image":"f09", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-9": [
+			{"image":"f10", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-10": [
+			{"image":"f11", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-11": [
+			{"image":"f12", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-12": [
+			{"image":"f13", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-13": [
+			{"image":"f14", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-14": [
+			{"image":"f15", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-15": [
+			{"image":"f16", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-16": [
+			{"image":"f17", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-17": [
+			{"image":"f18", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-18": [
+			{"image":"f19", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-19": [
+			{"image":"f20", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-20": [
+			{"image":"f21", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-21": [
+			{"image":"f22", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-22": [
+			{"image":"f23", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-23": [
+			{"image":"f24", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-24": [
+			{"image":"f25", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			],
+		"scrolly1-25": [
+			{"image":"f26", "xmetric":"left","x":-20, "ymetric": "top", "y":-20, "width": 140, "opacity": 1},
+			]
 	};
 
 	// Runs on new stage
@@ -485,7 +171,7 @@
 					{#each currentStage as { image,opacity }}
 					<img
 					class={image}
-					src="assets/yardsale/art/{image}.png"
+					src="assets/yardsale/art/{image}.jpg"
 					alt="stageImage"
 					style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity:{opacity};"
 					in:fade={{ delay: 0 }}
@@ -720,16 +406,18 @@
 		pointer-events: none;
 	}
 	.step > p {
-		font-family: "National 2 Web";
-		max-width: 500px;
+		font-family: "";
+		max-width: 580px;
 		margin: 0 auto;
-		background: rgba(0, 0, 0, 0.8);
-		font-size: 1.4em;
-		padding: 10px;
+		background: rgba(255, 2595, 2595, 0.95);
+		font-size: 1.2em;
+		padding: 50px;
 		box-sizing: border-box;
-		color: white;
-		text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.5);
-		text-align: center;
+		color: black;
+		/* text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.5); */
+		text-align: justify;
+		border-radius: 12px;
+		/* border: 1px solid black; */
 	}
 
 	@media only screen and (max-width: 640px) {

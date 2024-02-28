@@ -172,8 +172,8 @@
 		flex-direction: row;
     }
     .logo{
-        max-width: 13em;
-    margin: 0 auto;
+        max-width: 0;
+        margin: 0 auto;
   
     padding: 1em 0;
         display: flex;
@@ -200,52 +200,49 @@
         z-index: 1000;
     }
     .sectionBox {
-        width:50px;
-        height:50px;
-        background: white;
+        width:40px;
+        height:40px;
+        background: #ffffff90;
         opacity: 1;
-        transform: scale(0.65);
+        transform: scale(0.40);
         transition: 0.25s linear;
         border-radius: 50%;
     }
     .sectionBox.active {
-        transform: scale(1);
+        transform: scale(.8);
     }
     #sectionBox-intro.active {
-        border: 3px solid var(--romance-pink);
-    }
-    #sectionBox-intro.active {
-        border: 3px solid var(--romance-pink);
+        border: 5px solid var(--romance-pinkone);
     }
     #sectionBox-raunchiness.active {
-        border: 3px solid var(--romance-blue);
+        border: 5px solid var(--romance-blue);
     }
     #sectionBox-illustration.active {
-        border: 3px solid var(--romance-yellow);
+        border: 5px solid var(--romance-yellow);
     }
     #sectionBox-race.active {
-        border: 3px solid var(--romance-teal);
+        border: 5px solid var(--romance-teal);
     }
     #sectionBox-methods.active {
-        border: 3px solid var(--romance-pink);
+        border: 5px solid var(--romance-pink);
     }
     .sectionBox:hover {
         opacity: 1; 
     }
     #sectionBox-intro {
-        border: 3px solid var(--romance-pink-light);
+        border: 5px solid var(--romance-pink-lightone);
     }
     #sectionBox-raunchiness {
-        border: 3px solid var(--romance-blue-light);
+        border: 5px solid var(--romance-blue-light);
     }
     #sectionBox-illustration {
-        border: 3px solid var(--romance-yellow-light);
+        border: 5px solid var(--romance-yellow-light);
     }
     #sectionBox-race {
-        border: 3px solid var(--romance-teal-light);
+        border: 5px solid var(--romance-teal-light);
     }
     #sectionBox-methods {
-        border: 3px solid var(--romance-pink-light);
+        border: 5px solid var(--romance-pink-light);
     }
     .label {
         position: absolute;
@@ -264,7 +261,7 @@
         text-align: center;
     }
     .label.active {
-        opacity: 1; 
+        opacity: 0; 
     }
     .btn-wrapper {
         position: relative;
@@ -272,12 +269,12 @@
         /* margin: -0.5rem 0 0 0; */
     }
     .btn-wrapper:hover .label {
-        opacity: 1; 
+        opacity: 0; 
         transform: translate(-50%, -75%);
         z-index: 1000;
     }
     .btn-wrapper:hover .sectionBox {
-        transform: scale(1);
+        transform: scale(.5);
     }
     .listBtn {
         position: absolute;

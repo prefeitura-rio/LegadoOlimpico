@@ -97,7 +97,7 @@
     <!-- {#if introText !== undefined}
         <Prose copy={introText}/>
     {/if} -->
-    <Prose copy={copy.lookBackA[0]}/>
+    <Prose copy={copy.lookBackA}/>
     <!-- <h5>Clinch covers featuring Fabio</h5>
     <div class="book-wrapper">
         {#each lookbackData.slice(5,10) as book, i}

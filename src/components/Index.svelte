@@ -70,7 +70,7 @@
 
 <svelte:window bind:innerWidth={w} bind:innerHeight={h} bind:scrollY={scrollY} />
 <ChapterMarker />
-<IntroScrolly style="z-index:1" bookMin={bookMin} w={w} h={h} scrollY={scrollY}/>
+<IntroScrolly bookMin={bookMin} w={w} h={h} scrollY={scrollY}/>
 <Lookback style="z-index:9999" bookMin={bookMin}/>
 <div class="sections">
 	<Chapter id={"raunchiness"} data={raunchinessData} copyBlock={copy.raunchinessText} copyScroll={copy.raunchinessScroll} scrollY={scrollY} xShiftSection={$xShiftRaunch} />

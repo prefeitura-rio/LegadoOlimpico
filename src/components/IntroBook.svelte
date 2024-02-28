@@ -9,86 +9,16 @@
 
 	const copy = getContext("copy");
 
-	let bookH;
-	let bookTranslate = 0;
-	let frontRotate = 0;
-	let pageOneText;
-	let pageTwoText;
-	// let headlineSize;
-
-	// function computePercentage(scrollY, w, h) {
-	// 	if (scrollY >= 2) {
-	// 		if (w < 600) {
-	// 			bookTranslate = (scrollY / h) * 100 < 50 ? 100 : 0;
-	// 		} else {
-	// 			bookTranslate = 50;
-	// 		}
-	// 		frontRotate = 180;
-	// 		let book = selectAll("#book .main");
-	// 		book.style("transform", "rotate3d(0,1,0,0deg)");
-	// 	} else {
-	// 		bookTranslate = 0;
-	// 		frontRotate = 0;
-	// 	}
-	// }
-
-	// function setBookText() {
-	// 	console.log(bookMin);
-	// 	if (copy !== undefined) {
-	// 		if (bookMin > 900) {
-	// 			pageOneText = copy.page1_900;
-	// 			pageTwoText = copy.page2_900;
-	// 			// headlineSize = 68;
-	// 		} else if (bookMin > 780) {
-	// 			pageOneText = copy.page1_750;
-	// 			pageTwoText = copy.page2_750;
-	// 			// headlineSize = 56;
-	// 		} else if (bookMin > 740) {
-	// 			pageOneText = copy.page1_650;
-	// 			pageTwoText = copy.page2_650;
-	// 			// headlineSize = 48;
-	// 		} else if (bookMin > 680) {
-	// 			pageOneText = copy.page1_600;
-	// 			pageTwoText = copy.page2_600;
-	// 			// headlineSize = 40;
-	// 		} else if (bookMin <= 680) {
-	// 			pageOneText = copy.page1_else;
-	// 			pageTwoText = copy.page2_else;
-	// 			// headlineSize = 36;
-	// 		}
-	// 	}
-	// }
-
-	// function bookMousemove(e) {
-	// 	let xPos = e.clientX;
-	// 	let rotation = xPos > w / 2 ? 30 : -30;
-	// 	if (scrollY < 2) {
-	// 		let book = selectAll("#book .main");
-	// 		book.style("transform", `rotate3d(0,1,0,${rotation}deg)`);
-	// 	}
-	// }
-
-	// function bookMouseout() {
-	// 	if (scrollY < 2) {
-	// 		let book = selectAll("#book .main");
-	// 		book.style("transform", "rotate3d(0,1,0,0deg)");
-	// 	}
-	// }
-
-	// $: scrollY, computePercentage(scrollY, w, h);
-	// $: w, computePercentage(scrollY, w, h);
-	// $: h, computePercentage(scrollY, w, h);
-	// $: bookMin, setBookText();
 </script>
 
 <div class="container">
   <div class="title">
     <h2 style="font-size:5rem;">Sem elefantes brancos</h2>
-    <h1 style="font-size:90px;font-weight:bold">Ta legado?</h1>
+		<h1 style="font-size:90px;font-weight:bold"></h1>
     <h6 style="font-size:20px;">Explorando a Arquitetura Nômade nas Olimpíadas do Rio 2016</h6>
   </div>
 
-  <!-- <div class="css-grid">
+  <div class="css-grid">
     <div id="item-0">&nbsp;</div>
     <div id="item-1">&nbsp;</div>
     <div id="item-2">&nbsp;</div>
@@ -97,16 +27,18 @@
     <div id="item-5">&nbsp;</div>
     <div id="item-6">&nbsp;</div>
     <div id="item-7">&nbsp;</div>
-  </div> -->
+  </div>
 </div>
 
 <style>
 .container {
   position: relative;
+	height: 65vh;
+	overflow: hidden;
 }
 
 .title {
-  /* position: absolute; */
+  position: absolute;
   z-index: 2 !important;
   display: flex;
   justify-content: center;
@@ -121,7 +53,7 @@
 	position: inherit;
 	z-index: 1 !important;
   display: grid;
-  grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+	grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr ;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px;
   height: 60rem;
@@ -129,27 +61,38 @@
   
 #item-0 {
 
-   background-color: #ACFBD5; 
+	/* background-image: url('$images/card01.jpg'); */
+   background-size: cover;
+   background-repeat: no-repeat; 
+   transform: rotate(25deg) ; 
    grid-row-start: 1;
    grid-column-start: 1;
-
-   grid-row-end: 3;
-   grid-column-end: 3;
+	 grid-row-end: 3;
+	 grid-column-end: 3; 
+   scale: 1.2;
    
 }
 #item-1 {
 
-   background-color: #DEE5BB; 
-   grid-row-start: 1;
+	/* background-image: url('$images/card02.jpg'); */
+   background-size: cover;
+   background-repeat: no-repeat; 
+   transform: rotate(-15deg) translateY(-80px) translateX(-80px);
+
+	 grid-row-start: 1;
    grid-column-start: 5;
 
    grid-row-end: 3;
    grid-column-end: 7;
    
+   scale: 0.8;
 }
 #item-2 {
 
-   background-color: #959796; 
+	/* background-image: url('$images/card03.jpg'); */
+   background-size: cover;
+   background-repeat: no-repeat; 
+   transform: rotate(10deg) translateY(-200px) translateX(-100px);
    grid-row-start: 1;
    grid-column-start: 9;
 
@@ -159,44 +102,62 @@
 }
 #item-3 {
 
-   background-color: #8C5ECA; 
+  /* background-image: url('$images/card04.jpg'); */
+   background-size: cover;
+   background-repeat: no-repeat; 
+   transform: rotate(-10deg) translateY(40px) translateX(-80px);
    grid-row-start: 4;
    grid-column-start: 3;
 
    grid-row-end: 6;
    grid-column-end: 5;
    
+   scale: 0.8;   
+   
 }
 #item-4 {
 
-   background-color: #755B7A; 
+	/* background-image: url('$images/card05.jpg'); */
+   background-size: cover;
+   background-repeat: no-repeat; 
+   transform: rotate(15deg) translateY(-140px) translateX(120px);
    grid-row-start: 4;
    grid-column-start: 7;
 
    grid-row-end: 6;
    grid-column-end: 9;
+   scale: 1.2;
    
 }
 #item-5 {
 
-   background-color: #5CDA9B; 
+	/* background-image: url('$images/card06.jpg'); */
+   background-size: cover;
+   background-repeat: no-repeat; 
+   transform: rotate(15deg);
    grid-row-start: 7;
    grid-column-start: 1;
 
    grid-row-end: 9;
    grid-column-end: 3;
+   scale: 0.8;
 }
-#item-6 {
+/* #item-6 {
 
-   background-color: #FD7BD7; 
+  background-image: url('$images/img1.png');
+   background-size: cover;
+   background-repeat: no-repeat; 
+   transform: rotate(-15deg);
    grid-row-start: 7;
    grid-column-start: 5;
 
    grid-row-end: 9;
    grid-column-end: 7;
    
-}
-#item-7 {
+   scale: 0.8;
+   
+} */
+/* #item-7 {
 
    background-color: #9A5DDD; 
    grid-row-start: 7;
@@ -205,7 +166,7 @@
    grid-row-end: 9;
    grid-column-end: 11;
    
-}
+} */
 
 	#intro-book {
 		position: sticky;
