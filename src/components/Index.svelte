@@ -92,6 +92,8 @@
 <Footer />
 
 <style>
+@media (min-width: 600px) {
+	
 .css-grid {
 
     position: absolute; 
@@ -203,5 +205,5 @@ background-image: url('$images/card07.png');
  
  scale: 1.2;
  
-}
+}}
 </style>

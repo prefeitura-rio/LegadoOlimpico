@@ -34,6 +34,7 @@
 </section>
 
 <style>
+ 
 
 	.sticky {
 		position: sticky;
@@ -59,5 +60,16 @@
         100% {
             transform: rotate(360deg);
         }
+    }
+    @media (max-width: 600px) {
+        .sticky {
+		position: sticky;
+		transition: all 1s;
+        z-index: 1;
+        overflow-x: hidden;
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: center;
+	}
     }
 </style>
