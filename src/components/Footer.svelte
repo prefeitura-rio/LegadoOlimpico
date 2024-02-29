@@ -29,7 +29,7 @@
 	<h3 id="prefeito">Prefeito</h3>
 	<h6>Eduardo Paes</h6>
 	<div class="footer_logo">
-		{@html logo}
+		<img src="assets/yardsale/art/logo_preto_horizontal.png" alt="Foto" />
 	</div>
 	<br>
 	<br>
@@ -40,6 +40,7 @@
 		font-size: 25px;
 	}
 	.footer_logo{
+		scale: 2;
 		padding:150px;
 	}
 	.footer {
