@@ -206,4 +206,121 @@ background-image: url('$images/card07.png');
  scale: 1.2;
  
 }}
+
+@media (max-width: 600px) {
+	
+	.css-grid {
+	
+			position: absolute; 
+			left: 0; /* Alinha a esquerda do elemento com a esquerda da viewport */
+			width: 100vw; /* Define a largura do elemento para a largura total da viewport */
+			height: 200vh;
+			z-index: -1; 
+	
+			display: grid;
+			grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			
+		}
+		#item-0 {
+	background-image: url('$images/card01.png');
+	 background-size: contain;
+	 background-repeat: no-repeat; 
+	 transform: rotate(25deg) translateY(10rem) translateX(-11rem); 
+	 grid-row-start: 1;
+	 grid-column-start: 1;
+	 grid-row-end: 4;
+	 grid-column-end: 5; 
+	 scale: 0.5;
+	 
+	}
+	#item-1 {
+	
+	background-image: url('$images/card02.png');
+	 background-size: contain;
+	 background-repeat: no-repeat; 
+	 transform: rotate(-15deg) translateY(2rem) translateX(-4rem);
+	
+	 grid-row-start: 1;
+	 grid-column-start: 5;
+	
+	 grid-row-end: 3;
+	 grid-column-end: 7;
+	 
+	 scale: 1.3;
+	}
+	#item-2 {
+	
+	background-image: url('$images/card03.png');
+	 background-size: contain;
+	 background-repeat: no-repeat; 
+	 transform: rotate(5deg) translateY(3rem) translateX(-8.5rem);
+	 grid-row-start: 1;
+	 grid-column-start: 9;
+	
+	 grid-row-end: 3;
+	 grid-column-end: 11;
+	
+	 /* scale: 1.1; */
+	 
+	}
+	 #item-3 {
+	
+	background-image: url('$images/card04.png');
+	 background-size: contain;
+	 background-repeat: no-repeat; 
+	 transform: rotate(20deg) translateY(8rem) translateX(5rem);
+	 /* grid-row-start: 1;
+	 grid-column-start: 9;
+	
+	 grid-row-end: 4;
+	 grid-column-end: 11; */
+	 
+	 scale: 1.8;   
+	 
+	}
+
+	#item-4 {
+	
+	background-image: url('$images/card05.png');
+	 background-size: contain;
+	 background-repeat: no-repeat; 
+	 transform:  rotate(-20deg) translateY(35rem) translateX(-16rem);
+	 grid-row-start: 1;
+	 grid-column-start: 1;
+	
+	 grid-row-end: 4;
+	 grid-column-end: 5;
+	 scale: 0.6;
+	 
+	}
+ #item-5 {
+	
+	background-image: url('$images/card06.png');
+	background-size: contain;
+	 background-repeat: no-repeat; 
+	 transform:  rotate(2deg) translateY(58rem) translateX(20rem);
+	 grid-row-start: 1;
+	 grid-column-start: 1;
+	
+	 grid-row-end: 4;
+	 grid-column-end: 5;
+	 scale: 0.4;
+	}
+	
+	#item-6 {
+	
+	background-image: url('$images/card07.png');
+	background-size: contain;
+	 background-repeat: no-repeat; 
+	 transform:  rotate(20deg) translateY(33rem) translateX(46rem);
+	 grid-row-start: 1;
+	 grid-column-start: 1;
+	
+	 grid-row-end: 4;
+	 grid-column-end: 5;
+	 scale: 0.5;
+	 
+	}
+}
 </style>

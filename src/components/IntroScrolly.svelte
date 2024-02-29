@@ -67,7 +67,7 @@
 		transition: all 1s;
         z-index: 1;
         overflow-x: hidden;
-        padding: 0 0 0 0;
+        padding: 2 0 0 0;
         display: flex;
         justify-content: center;
 	}
