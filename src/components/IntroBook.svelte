@@ -61,7 +61,7 @@
   
 #item-0 {
 
-	/* background-image: url('$images/card01.jpg'); */
+	background-image: url('$images/card01.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(25deg) ; 
@@ -74,7 +74,7 @@
 }
 #item-1 {
 
-	/* background-image: url('$images/card02.jpg'); */
+	background-image: url('$images/card02.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(-15deg) translateY(-80px) translateX(-80px);
@@ -89,7 +89,7 @@
 }
 #item-2 {
 
-	/* background-image: url('$images/card03.jpg'); */
+	background-image: url('$images/card03.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(10deg) translateY(-200px) translateX(-100px);
@@ -102,7 +102,7 @@
 }
 #item-3 {
 
-  /* background-image: url('$images/card04.jpg'); */
+  background-image: url('$images/card01.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(-10deg) translateY(40px) translateX(-80px);
@@ -117,7 +117,7 @@
 }
 #item-4 {
 
-	/* background-image: url('$images/card05.jpg'); */
+	background-image: url('$images/card02.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(15deg) translateY(-140px) translateX(120px);
@@ -131,7 +131,7 @@
 }
 #item-5 {
 
-	/* background-image: url('$images/card06.jpg'); */
+	background-image: url('$images/card03.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(15deg);

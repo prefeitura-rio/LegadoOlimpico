@@ -1,11 +1,11 @@
 <script>
     export let copy;
-    import card01 from "$images/card01.jpg";
-    import card02 from "$images/card02.jpg";
-    import card03 from "$images/card03.jpg";
-    import card04 from "$images/card01.jpg";
-    import card05 from "$images/card02.jpg";
-    import card06 from "$images/card03.jpg";
+    import card01 from "$images/card01.png";
+    import card02 from "$images/card02.png";
+    import card03 from "$images/card03.png";
+    import card04 from "$images/card01.png";
+    import card05 from "$images/card02.png";
+    import card06 from "$images/card03.png";
     import est_aqua1 from "$images/est_aqua1.png";
     import est_aqua2 from "$images/est_aqua2.png";
     import est_aqua3 from "$images/est_aqua3.png";
