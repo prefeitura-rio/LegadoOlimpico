@@ -34,14 +34,13 @@
             <img style="padding-top: 5rem;" src={ibc} alt="Foto" />
             <p class="image-caption">Fachada do IBC (Foto: Ricardo Cassiano/Prefeitura do Rio)</p>
             {:else if text.value == "foto2"}
-            <div style='padding-top:2rem;padding-bottom:5rem; display:flex;justify-content:space-around;'>
-            <img style='max-width:7rem' src="assets/yardsale/art/card01.jpg" alt="Foto" />
-            <img style='max-width:7rem' src="assets/yardsale/art/card02.jpg" alt="Foto" />
-            <img style='max-width:7rem' src="assets/yardsale/art/card03.jpg" alt="Foto" />
-            <img style='max-width:7rem' src="assets/yardsale/art/card01.jpg" alt="Foto" />
-            <img style='max-width:7rem' src="assets/yardsale/art/card02.jpg" alt="Foto" />
-            <img style='max-width:7rem' src="assets/yardsale/art/card03.jpg" alt="Foto" />
-
+            <div class="image-container">
+                <img src="assets/yardsale/art/card01.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card02.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card03.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card01.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card02.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card03.jpg" alt="Foto" />
             </div>
             {/if}
         {/each}
@@ -51,6 +50,17 @@
 </div>
 
 <style>
+     .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 5rem;
+    }
+
+    .image-container img {
+        max-width: 7rem;
+    }
+
     .prose {
         display: flex;
         justify-content: center;
