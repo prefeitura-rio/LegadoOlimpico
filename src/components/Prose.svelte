@@ -38,9 +38,10 @@
                 <img src="assets/yardsale/art/card01.jpg" alt="Foto" />
                 <img src="assets/yardsale/art/card02.jpg" alt="Foto" />
                 <img src="assets/yardsale/art/card03.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card01.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card02.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card03.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card04.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card05.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card06.jpg" alt="Foto" />
+                <img src="assets/yardsale/art/card07.jpg" alt="Foto" />
             </div>
             {/if}
         {/each}
@@ -53,12 +54,24 @@
      .image-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         padding-bottom: 5rem;
+        gap:1rem
     }
 
     .image-container img {
-        max-width: 7rem;
+        max-width: 8rem;
+    }
+
+    @media (max-width: 600px) {
+        .image-container img {
+            max-width: 6rem;
+           
+        }
+        .image-container {
+            justify-content: center;
+            gap:0.5rem
+        }
     }
 
     .prose {

@@ -26,7 +26,6 @@
     <div id="item-4">&nbsp;</div>
     <div id="item-5">&nbsp;</div>
     <div id="item-6">&nbsp;</div>
-    <div id="item-7">&nbsp;</div>
   </div>
 </div>
 
@@ -102,7 +101,7 @@
 }
 #item-3 {
 
-  background-image: url('$images/card01.png');
+  background-image: url('$images/card04.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(-10deg) translateY(40px) translateX(-80px);
@@ -117,7 +116,7 @@
 }
 #item-4 {
 
-	background-image: url('$images/card02.png');
+	background-image: url('$images/card05.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(15deg) translateY(-140px) translateX(120px);
@@ -131,7 +130,7 @@
 }
 #item-5 {
 
-	background-image: url('$images/card03.png');
+	background-image: url('$images/card06.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(15deg);
@@ -142,9 +141,9 @@
    grid-column-end: 3;
    scale: 0.8;
 }
-/* #item-6 {
+#item-6 {
 
-  background-image: url('$images/img1.png');
+  background-image: url('$images/card07.png');
    background-size: cover;
    background-repeat: no-repeat; 
    transform: rotate(-15deg);
@@ -156,7 +155,7 @@
    
    scale: 0.8;
    
-} */
+}
 /* #item-7 {
 
    background-color: #9A5DDD; 
