@@ -1,8 +1,8 @@
 <script>
     export let copy;
-    import card01 from "$images/card01.png";
-    import card02 from "$images/card02.png";
-    import card03 from "$images/card03.png";
+    // import card01 from "$images/card01.png";
+    // import card02 from "$images/card02.png";
+    // import card03 from "$images/card03.png";
     // import card04 from "$images/card01.png";
     // import card05 from "$images/card02.png";
     // import card06 from "$images/card03.png";
@@ -35,9 +35,9 @@
             <p class="image-caption">Fachada do IBC (Foto: Ricardo Cassiano/Prefeitura do Rio)</p>
             {:else if text.value == "foto2"}
             <div style='padding-top:2rem;padding-bottom:5rem; display:flex;justify-content:space-around;'>
-            <img style='max-width:7rem' src={card01} alt="Foto" />
-            <img style='max-width:7rem' src={card02} alt="Foto" />
-            <img style='max-width:7rem' src={card03} alt="Foto" />
+            <img style='max-width:7rem' src="assets/yardsale/art/card01.jpg" alt="Foto" />
+            <img style='max-width:7rem' src="assets/yardsale/art/card02.jpg" alt="Foto" />
+            <img style='max-width:7rem' src="assets/yardsale/art/card03.jpg" alt="Foto" />
             <img style='max-width:7rem' src="assets/yardsale/art/card01.jpg" alt="Foto" />
             <img style='max-width:7rem' src="assets/yardsale/art/card02.jpg" alt="Foto" />
             <img style='max-width:7rem' src="assets/yardsale/art/card03.jpg" alt="Foto" />
