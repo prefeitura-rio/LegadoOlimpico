@@ -3,9 +3,9 @@
     import card01 from "$images/card01.png";
     import card02 from "$images/card02.png";
     import card03 from "$images/card03.png";
-    import card04 from "$images/card01.png";
-    import card05 from "$images/card02.png";
-    import card06 from "$images/card03.png";
+    // import card04 from "$images/card01.png";
+    // import card05 from "$images/card02.png";
+    // import card06 from "$images/card03.png";
     import est_aqua1 from "$images/est_aqua1.png";
     import est_aqua2 from "$images/est_aqua2.png";
     import est_aqua3 from "$images/est_aqua3.png";
@@ -38,9 +38,9 @@
             <img style='max-width:7rem' src={card01} alt="Foto" />
             <img style='max-width:7rem' src={card02} alt="Foto" />
             <img style='max-width:7rem' src={card03} alt="Foto" />
-            <img style='max-width:7rem' src={card04} alt="Foto" />
-            <img style='max-width:7rem' src={card05} alt="Foto" />
-            <img style='max-width:7rem' src={card06} alt="Foto" />
+            <img style='max-width:7rem' src="assets/yardsale/art/card01.jpg" alt="Foto" />
+            <img style='max-width:7rem' src="assets/yardsale/art/card02.jpg" alt="Foto" />
+            <img style='max-width:7rem' src="assets/yardsale/art/card03.jpg" alt="Foto" />
 
             </div>
             {/if}
