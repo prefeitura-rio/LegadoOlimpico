@@ -90,20 +90,19 @@
         font-weight: 500;
     }
 
+    @media (max-width: 600px) {
+        .prose {
+            max-width: 24rem;
+            margin-left:2rem;
+        }
+    }
+
     .image-caption {
-    /* font-family: 'Arial', sans-serif; */
-    font-weight: bold;
-    font-size: 11px;
+        font-size: 1rem;
     color: #333;
-    text-align: center;
-    padding: 8px;
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
-    border-radius: 5px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    margin-top: .2rem;
 }
 
 </style>

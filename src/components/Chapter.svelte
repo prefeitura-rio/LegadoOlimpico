@@ -109,7 +109,7 @@
 
 $: {
     if (currentImageEsquerda === f01_esquerda) {
-      legenda = 'Clique nos botões da primeira imagem.';
+      legenda = 'Clique nos botões abaixo.';
     } else if (currentImageEsquerda === f05_esquerda) {
       legenda = 'Arquibancadas';
     } else if (currentImageEsquerda === f04_esquerda) {
@@ -172,6 +172,11 @@ $: {
     color: #333; 
     box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
     margin-bottom: 20px !important;
+}
+@media (max-width: 600px) {
+    .legenda {
+        max-width: 24rem;
+    }
 }
 .container {
   margin: 0 auto;

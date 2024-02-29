@@ -13,7 +13,7 @@
 
 <div class="container">
   <div class="title">
-    <h2 style="font-size:5rem;">Sem elefantes brancos</h2>
+    <h2 id="sem_elefantes">Sem elefantes brancos</h2>
 		<h1 style="font-size:90px;font-weight:bold"></h1>
     <h6 style="font-size:20px;">Explorando a Arquitetura Nômade nas Olimpíadas do Rio 2016</h6>
   </div>
@@ -46,6 +46,18 @@
   height: 50vh;
   width: 100%;
   text-align: center;
+}
+#sem_elefantes {
+	font-size: 5rem;
+}
+@media (max-width: 600px) {
+	
+	#sem_elefantes {
+		padding-top: 8rem;
+		padding-bottom: 3rem;
+	font-size: 3rem;
+	line-height: 4rem;
+}
 }
 
 /* .css-grid {
