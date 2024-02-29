@@ -18,7 +18,7 @@
     <h6 style="font-size:20px;">Explorando a Arquitetura Nômade nas Olimpíadas do Rio 2016</h6>
   </div>
 
-  <div class="css-grid">
+  <!-- <div class="css-grid">
     <div id="item-0">&nbsp;</div>
     <div id="item-1">&nbsp;</div>
     <div id="item-2">&nbsp;</div>
@@ -26,7 +26,7 @@
     <div id="item-4">&nbsp;</div>
     <div id="item-5">&nbsp;</div>
     <div id="item-6">&nbsp;</div>
-  </div>
+  </div> -->
 </div>
 
 <style>
@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-.css-grid {
+/* .css-grid {
 	position: inherit;
 	z-index: 1 !important;
   display: grid;
@@ -56,9 +56,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px;
   height: 60rem;
-}
+} */
   
-#item-0 {
+/* #item-0 {
 
 	background-image: url('$images/card01.png');
    background-size: cover;
@@ -155,7 +155,7 @@
    
    scale: 0.8;
    
-}
+} */
 /* #item-7 {
 
    background-color: #9A5DDD; 

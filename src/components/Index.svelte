@@ -70,52 +70,138 @@
 
 <svelte:window bind:innerWidth={w} bind:innerHeight={h} bind:scrollY={scrollY} />
 <ChapterMarker />
+<!-- CSS Grid HTML aqui -->
+<div class="css-grid">
+	<div id="item-0">&nbsp;</div>
+	<div id="item-1">&nbsp;</div>
+	<div id="item-2">&nbsp;</div>
+	<div id="item-3">&nbsp;</div>
+	<div id="item-4">&nbsp;</div>
+	<div id="item-5">&nbsp;</div>
+	<div id="item-6">&nbsp;</div>
+</div>
 <IntroScrolly bookMin={bookMin} w={w} h={h} scrollY={scrollY}/>
 <Lookback style="z-index:9999" bookMin={bookMin}/>
+
 <div class="sections">
 	<Chapter id={"raunchiness"} data={raunchinessData} copyBlock={copy.raunchinessText} copyScroll={copy.raunchinessScroll} scrollY={scrollY} xShiftSection={$xShiftRaunch} />
 	<Chapter id={"illustration"} data={illustrationData} copyBlock={copy.illustrationText} copyScroll={copy.illustrationScroll} scrollY={scrollY} xShiftSection={$xShiftIllo} />
 	<Chapter id={"race"} data={raceData} copyBlock={copy.raceText} copyScroll={copy.raceScroll} scrollY={scrollY} xShiftSection={$xShiftRace} />
 </div>
-<!-- {#if $activeSection !== "intro" && $activeSection !== "methods" && $activeSection !== null}
-	<section id="barChart" in:fly={{ y: 200, duration: 2000 }} out:fly={{ y: 200, duration: 2000 }}>
-		<BarChart data={barData} color={barColor} highlightColor={barColorHighlight} pos={"overlay"} yearTotals={yearTotals}/>
-		<div class="shield"></div>
-	</section>
-{/if} -->
-<!-- <ReadingList data={data} pos={"overlay"}/> -->
-<!-- <Outro /> -->
+
 <Footer />
 
 <style>
-	#barChart {
-        position: fixed;
-        width: 100%;
-        height: 10rem;
-        left: 0;
-        bottom: 2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        z-index: 999;
-		pointer-events: none;
-    }
-	.shield {
-		width: 100%;
-		height: 2rem;
-		position: absolute;
-		left: 0;
-		bottom: -2rem ;
-		background: rgba(255, 255, 255, 0.75);
-		display: block;
-	}
+.css-grid {
 
-	@media only screen and (min-width: 600px) {
-        #barChart {
-			bottom: 0rem;
-		}
-		.shield {
-			display: none;
-		}
-	}
+    position: absolute; 
+    left: 0; /* Alinha a esquerda do elemento com a esquerda da viewport */
+    width: 100vw; /* Define a largura do elemento para a largura total da viewport */
+    height: 200vh;
+    z-index: -1; 
+
+    display: grid;
+    grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+  }
+	#item-0 {
+background-image: url('$images/card01.png');
+ background-size: contain;
+ background-repeat: no-repeat; 
+ transform: rotate(25deg) translateY(10rem) translateX(-10rem); 
+ grid-row-start: 1;
+ grid-column-start: 1;
+ grid-row-end: 4;
+ grid-column-end: 5; 
+ scale: 0.5;
+ 
+}
+#item-1 {
+
+background-image: url('$images/card02.png');
+ background-size: contain;
+ background-repeat: no-repeat; 
+ transform: rotate(-15deg) translateY(-10rem) translateX(-5rem);
+
+ grid-row-start: 1;
+ grid-column-start: 5;
+
+ grid-row-end: 3;
+ grid-column-end: 7;
+ 
+ scale: 0.6;
+}
+#item-2 {
+
+background-image: url('$images/card03.png');
+ background-size: contain;
+ background-repeat: no-repeat; 
+ transform: rotate(-25deg) translateY(-5rem) translateX(-5rem);
+ grid-row-start: 1;
+ grid-column-start: 9;
+
+ grid-row-end: 3;
+ grid-column-end: 11;
+
+ scale: 0.8;
+ 
+}
+#item-3 {
+
+background-image: url('$images/card04.png');
+ background-size: contain;
+ background-repeat: no-repeat; 
+ transform: rotate(-10deg) translateY(-10rem) translateX(-20rem);
+ grid-row-start: 4;
+ grid-column-start: 3;
+
+ grid-row-end: 6;
+ grid-column-end: 5;
+ 
+ scale: 0.8;   
+ 
+}
+#item-4 {
+
+background-image: url('$images/card05.png');
+ background-size: contain;
+ background-repeat: no-repeat; 
+ transform: rotate(15deg) translateY(-10rem) translateX(20rem);
+ grid-row-start: 4;
+ grid-column-start: 7;
+
+ grid-row-end: 6;
+ grid-column-end: 9;
+ scale: 0.9;
+ 
+}
+#item-5 {
+
+background-image: url('$images/card06.png');
+ background-size: contain;
+ background-repeat: no-repeat; 
+ transform: rotate(15deg) translateY(-10rem) translateX(5rem);
+ grid-row-start: 7;
+ grid-column-start: 1;
+
+ grid-row-end: 9;
+ grid-column-end: 3;
+ scale: 1.2;
+}
+#item-6 {
+
+background-image: url('$images/card07.png');
+ background-size: contain;
+ background-repeat: no-repeat; 
+ transform: rotate(-15deg) translateY(-10rem) translateX(5rem);
+ grid-row-start: 7;
+ grid-column-start: 9;
+
+ grid-row-end: 9;
+ grid-column-end: 11;
+ 
+ scale: 1.2;
+ 
+}
 </style>

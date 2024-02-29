@@ -37,7 +37,6 @@
 
 	.sticky {
 		position: sticky;
-		/* top: 0rem; */
 		transition: all 1s;
         z-index: 1;
         overflow-x: hidden;
