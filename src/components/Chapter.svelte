@@ -28,6 +28,24 @@
 	let lastY;
     let headlingFly = false;
 
+    function getLegenda() {
+    if (currentImageEsquerda === f01_esquerda) {
+      return 'legenda 1';
+    } else if (currentImageEsquerda === f05_esquerda) {
+      return 'legenda 2';
+    } else if (currentImageEsquerda === f04_esquerda) {
+      return 'legenda 3';
+    } else if (currentImageEsquerda === f03_esquerda) {
+      return 'legenda 4';
+    } else if (currentImageEsquerda === f02_esquerda) {
+      return 'legenda 5';
+    }
+
+    // Caso nenhuma condição seja correspondida, retorne uma legenda padrão
+    return 'legenda padrão';
+
+  }
+
     let scrolly1 = [
         "A Arena do Futuro recebeu as competições de Handebol das Olimpíadas e de Goalball nas Paralimpíadas de 2016",
         "",
@@ -56,11 +74,8 @@
   ]
 
     export let id;
-    export let data;
     export let copyBlock;
-    export let copyScroll;
     export let scrollY;
-    export let xShiftSection;
 
     function setSectionEnter(id) { 
         headlingFly = true;
@@ -88,12 +103,25 @@
         }
     }
 
-    function resetTitles(id) {
-        const title = id == "race" ? "racial diversity" : id;
-        return title
-    }
     
     $: scrollY, checkScrollY(scrollY);
+    let legenda;
+
+$: {
+    if (currentImageEsquerda === f01_esquerda) {
+      legenda = 'Clique nos botões da primeira imagem.';
+    } else if (currentImageEsquerda === f05_esquerda) {
+      legenda = 'Arquibancadas';
+    } else if (currentImageEsquerda === f04_esquerda) {
+      legenda = 'Fachada';
+    } else if (currentImageEsquerda === f03_esquerda) {
+      legenda = 'Drywall';
+    } else if (currentImageEsquerda === f02_esquerda) {
+      legenda = 'Louças';
+    } else {
+      legenda = 'legenda padrão';
+    }
+}
 </script>
 
 <section id={id}
@@ -106,7 +134,9 @@
             <YardsaleScrolly words={scrolly1} container="scrolly1"  />
         {/if}
         {#if id == "illustration"}
+        <div class="legenda"> {legenda}</div>
         <div class="container">
+           
             <div class="image-container">
                 <img class="img2_left" src={currentImageEsquerda} alt="img2_left" in:fade={{ delay: 0 }} out:fade />
                <!--reseta / images iniciais-->
@@ -125,12 +155,26 @@
         {/if}
     {/if}
     <ChapterText copy={copyBlock}/>
-    <!-- <Bookmark category={"wall"} /> -->
-    <!-- <WallScrolly data={data} copy={copyScroll} section={id} xShiftSection={xShiftSection} /> -->
 </section>
 
 <style>
+.legenda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 1rem; 
+    border: 1px solid #333; 
+    text-align: center;
+    border-radius: 50px;
+    background-color: #f5f5f5; 
+    color: #333; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
+    margin-bottom: 20px !important;
+}
 .container {
+  margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   width: 100%;
