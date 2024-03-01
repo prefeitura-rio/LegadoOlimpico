@@ -1,5 +1,5 @@
 <script>
-	export let title = "Legado olímpico";
+	export let title = "Sem elefantes brancos";
 	export let description = "Legado Olímpico";
 	export let url = "https://prefeitura-rio.github.io/LegadoOlimpico/";
 	export let keywords = "Legado olímpico, elefante branco, arquitetura nomade";

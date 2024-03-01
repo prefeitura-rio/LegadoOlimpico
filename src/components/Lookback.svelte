@@ -111,7 +111,8 @@
         line-height: 2;
         padding: 4rem 0;
         font-weight: 500;
-        font-size: var(--16px);
+        font-size: var(--10px);
+        font-weight: bold;
     }
 
     @media (max-width: 640px) {
@@ -120,6 +121,8 @@
             max-width: 26rem;
             margin-left:2.2rem;
             padding: 4rem 0;
+            font-size: var(--15px);
+            font-weight: bold;
         }
     }
 
@@ -177,7 +180,7 @@
     }
     :global(#lookback .img-wrapper.highlight) {
         transform: scale(1.25) translate(0, -15%);
-        /* transition: 0.125s all linear; */
+        transition: 0.125s all linear;
     }
     :global(#lookback .lookback-doc, #lookback .lookback-clinch, #lookback .lookback-travel, #lookback .small-chart-raunchiness, #lookback .small-chart-illustration, #lookback .small-chart-race) {
         transition: 0.125s all linear;
