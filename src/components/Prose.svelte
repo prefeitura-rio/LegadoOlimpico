@@ -16,7 +16,7 @@
 <div class="prose">
     {#if copy && Array.isArray(copy)}
         {#each copy as text, i}
-        {#if text.value != "foto1" &&  text.value != "foto1.1" &&  text.value != "foto1.2" && text.value != "foto2" && text.value != "foto3" && text.value != "foto4" }
+        {#if text.value != "foto1" &&  text.value != "foto1.1" &&  text.value != "foto1.2" && text.value != "foto2" && text.value != "foto3" && text.value != "foto4" && text.value != "foto5" }
             <p>{@html text.value}</p>
             {:else if text.value == "foto1"}
             <img style="padding-top: 5rem;" src={est_aqua1} alt="Foto" />
@@ -35,14 +35,18 @@
             <p class="image-caption">Fachada do IBC (Foto: Ricardo Cassiano/Prefeitura do Rio)</p>
             {:else if text.value == "foto2"}
             <div class="image-container">
-                <img src="assets/yardsale/art/card01.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card02.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card03.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card04.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card05.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card06.jpg" alt="Foto" />
-                <img src="assets/yardsale/art/card07.jpg" alt="Foto" />
-            </div>
+            <iframe width="670" height="400" src="https://www.youtube.com/embed/d1bsrglUj6A?si=JQBsI3PdFvW1zrQ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>
+            {:else if text.value == "foto5"}
+           <div class="image-container">
+            <img src="assets/yardsale/art/card01.jpg" alt="Foto" />
+            <img src="assets/yardsale/art/card02.jpg" alt="Foto" />
+            <img src="assets/yardsale/art/card03.jpg" alt="Foto" />
+            <img src="assets/yardsale/art/card04.jpg" alt="Foto" />
+            <img src="assets/yardsale/art/card05.jpg" alt="Foto" />
+            <img src="assets/yardsale/art/card06.jpg" alt="Foto" />
+            <img src="assets/yardsale/art/card07.jpg" alt="Foto" />
+        </div>
             {/if}
         {/each}
     {:else}

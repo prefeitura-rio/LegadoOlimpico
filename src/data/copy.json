@@ -346,7 +346,11 @@
     },
     {
       "type": "text",
-      "value": "<br><br>Visto pelo mundo, projetado para quem vive aqui. É assim que a Prefeitura do Rio vem executando as obras do legado olímpico na cidade. Os jogos terminaram em 2016 mas a transformação da cidade continua em andamento."
+      "value": "<br><br>Visto pelo mundo, projetado para quem vive aqui. É assim que a Prefeitura do Rio vem executando as obras do legado olímpico na cidade. Os jogos terminaram em 2016 mas a transformação da cidade continua em andamento.<br><br><br>"
+    },
+    {
+      "type": "text",
+      "value": "foto5"
     }
   ],
   "raceScroll": [
