@@ -728,7 +728,7 @@
 		width: 100%;
 		min-width: 200px;
 		box-sizing: border-box;
-		transition: opacity 500ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+		/* transition: opacity 500ms cubic-bezier(0.25, 0.25, 0.75, 0.75); */
 	}
 	.step.stepHidden {
 		opacity: 0;
@@ -756,8 +756,8 @@
 
 			float: none;
 			width: 110%;
-			top: 25%;
-			height: 60vh;
+			top: 37%;
+			height: 30vh;
 		}
 		.step > p {
 			width: 90%;

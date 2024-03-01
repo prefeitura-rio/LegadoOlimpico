@@ -81,7 +81,7 @@
         opacity: 1;
         filter: contrast(100%) brightness(100%) saturate(100%);
         transform: scale(1.125);
-        transition: all 0.25s ease-in 0.5s;
+        /* transition: all 0.25s ease-in 0.5s; */
     }
     :global(#illustration .book.active .img-wrapper)  {
         opacity: 1;

@@ -81,9 +81,10 @@
         max-width: 42rem;
         margin: 0 auto;
         line-height: 2;
-        padding: 0 1rem;
+        /* padding: 0 1rem; */
         font-weight: 500;
         font-size: var(--16px);
+        text-align: justify;
     }
     p {
         font-family: var(--serif);
@@ -92,8 +93,9 @@
 
     @media (max-width: 640px) {
         .prose {
-            max-width: 24rem;
-            margin-left:2rem;
+          
+            max-width: 26rem;
+            margin-left:2.2rem;
         }
     }
 

@@ -38,7 +38,7 @@
 
 	.sticky {
 		position: sticky;
-		transition: all 1s;
+		/* transition: all 1s; */
         z-index: 1;
         overflow-x: hidden;
         padding: 10rem 0 0 0;

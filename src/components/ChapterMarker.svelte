@@ -67,26 +67,6 @@
             {/each}
         </div>
     </div>
-    <div class="slider-wrapper">
-        {#if $sliderVisible}
-            <div id="range-slider" 
-                class:isHidden={$readingListVisible}
-                in:fade={{ delay: 250, duration: 200 }}
-                out:fade={{ delay: 0, duration: 200 }}>
-                <p><Icon name="move-left" /></p>
-                <div class="range-wrapper">
-                    {#if $activeSection == "raunchiness"}
-                        <Range value={rangeStart} min={0} max={100} step={1} showTicks={false} section={"raunchiness"} bind:sliderValRaunch /> 
-                    {:else if $activeSection == "illustration"}
-                        <Range value={rangeStart} min={0} max={100} step={1} showTicks={false} section={"illustration"} bind:sliderValIllo />
-                    {:else if $activeSection == "race"}
-                        <Range value={rangeStart} min={0} max={100} step={1} showTicks={false} section={"race"} bind:sliderValRace />
-                    {/if} 
-                </div>
-                <p><Icon name="move-right" /></p>
-            </div>
-        {/if}
-    </div>
 </nav>
 
 <style>
@@ -339,9 +319,9 @@
             transform: scale(1.5);
         }
     }
-    @media only screen and (min-width: 400px) {
+    @media only screen and (max-width: 640px) {
         .sect-btns {
-            min-width: 15rem;
+            display: none;
         }
 	}
 </style>
