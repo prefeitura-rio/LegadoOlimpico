@@ -66,23 +66,6 @@
                 </div>
             {/each}
         </div>
-        <!-- <button 
-            on:click={handleListToggle}
-            class="listBtn"
-            aria-label="open reading list">
-                {#if $readingList.length > 0}
-                    <p class="count"
-                    in:fly={{ y: 20, duration: 200}}
-                    out:fade={{ duration: 200}}>
-                        {$readingList.length}
-                    </p>
-                {/if}
-                {#if $readingListVisible == false}
-                    <div class="book_noList_black"></div>
-                {:else}
-                    <div class="book_inList_black"></div>
-                {/if}
-        </button> -->
     </div>
     <div class="slider-wrapper">
         {#if $sliderVisible}

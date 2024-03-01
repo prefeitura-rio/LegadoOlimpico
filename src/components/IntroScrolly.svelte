@@ -61,7 +61,7 @@
             transform: rotate(360deg);
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
         .sticky {
 		position: sticky;
 		transition: all 1s;

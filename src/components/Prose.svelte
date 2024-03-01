@@ -63,9 +63,9 @@
         max-width: 8rem;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
         .image-container img {
-            max-width: 6rem;
+            max-width: 5rem;
            
         }
         .image-container {
@@ -90,7 +90,7 @@
         font-weight: 500;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
         .prose {
             max-width: 24rem;
             margin-left:2rem;

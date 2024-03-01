@@ -50,7 +50,7 @@
 #sem_elefantes {
 	font-size: 5rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
 	
 	#sem_elefantes {
 		padding-top: 8rem;
@@ -211,7 +211,7 @@
 		perspective: 2000px;
 		transform: translate3d(0, 0, 0);
 		padding: 1rem;
-		max-width: 600px;
+		max-width: 640px;
 		max-height: 740px;
 		min-width: 200px;
 		min-height: 400px;

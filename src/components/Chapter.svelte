@@ -173,7 +173,7 @@ $: {
     box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
     margin-bottom: 20px !important;
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     .legenda {
         max-width: 24rem;
     }
@@ -199,7 +199,7 @@ $: {
 }
 
 /* Adicione esta consulta de mídia para alterar a largura em dispositivos móveis */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .container .image-container, .container img {
     width: 100%;
   }
@@ -218,7 +218,7 @@ $: {
   font-size: 20px; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .container {
     flex-direction: column;
   }

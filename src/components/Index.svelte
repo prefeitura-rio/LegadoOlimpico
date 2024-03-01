@@ -183,31 +183,29 @@ background-image: url('$images/card05.png');
 background-image: url('$images/card06.png');
  background-size: contain;
  background-repeat: no-repeat; 
- transform: rotate(15deg) translateY(-10rem) translateX(5rem);
- grid-row-start: 7;
+ transform: rotate(14deg) translateY(30rem) translateX(35rem); 
+ grid-row-start: 1;
  grid-column-start: 1;
-
- grid-row-end: 9;
- grid-column-end: 3;
- scale: 1.2;
+ grid-row-end: 4;
+ grid-column-end: 5; 
+ scale: 0.4;
 }
 #item-6 {
 
-background-image: url('$images/card07.png');
+ background-image: url('$images/card07.png');
  background-size: contain;
  background-repeat: no-repeat; 
- transform: rotate(-15deg) translateY(-10rem) translateX(5rem);
- grid-row-start: 7;
- grid-column-start: 9;
+ transform: rotate(-20deg) translateY(55rem) translateX(-5rem) ;
+ grid-row-start: 1;
+ grid-column-start: 6;
 
- grid-row-end: 9;
- grid-column-end: 11;
- 
- scale: 1.2;
+ grid-row-end: 3;
+ grid-column-end: 8;
+ scale: 0.4;
  
 }}
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
 	
 	.css-grid {
 	
@@ -305,7 +303,7 @@ background-image: url('$images/card07.png');
 	
 	 grid-row-end: 4;
 	 grid-column-end: 5;
-	 scale: 0.4;
+	 scale: 0.5;
 	}
 	
 	#item-6 {
@@ -313,7 +311,7 @@ background-image: url('$images/card07.png');
 	background-image: url('$images/card07.png');
 	background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform:  rotate(20deg) translateY(33rem) translateX(46rem);
+	 transform:  rotate(18deg) translateY(32rem) translateX(49rem);
 	 grid-row-start: 1;
 	 grid-column-start: 1;
 	

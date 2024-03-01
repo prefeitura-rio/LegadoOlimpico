@@ -280,7 +280,7 @@
 	.scrollyBackground {
 		position: sticky;
 		top: 0;
-		width: 100%;
+		/* width: 100%; */
 		/* margin: auto auto; */
 		height: 100vh;
 		/* border: 3px solid #000; */
@@ -424,9 +424,11 @@
 		.scrollyBackground {
 			margin: 0% auto;
 			min-height: none;
+
 			float: none;
-			width: 96%;
-			top: 10vh;
+			width: 110%;
+			top: 25%;
+			height: 60vh;
 		}
 		.step > p {
 			width: 90%;

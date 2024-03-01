@@ -94,47 +94,35 @@
 </script>
 
 <section id="lookback">
-    <!-- {#if introText !== undefined}
-        <Prose copy={introText}/>
-    {/if} -->
+    <p class="prose">Produzido pelo <a href="https://www.dados.rio/" target="_blank" class="custom-link">Escritório de Dados</a> da Prefeitura da Cidade do Rio de Janeiro</p>
     <Prose copy={copy.lookBackA}/>
-    <!-- <h5>Clinch covers featuring Fabio</h5>
-    <div class="book-wrapper">
-        {#each lookbackData.slice(5,10) as book, i}
-            <div class="highlightBook">
-                <div class="books books-fabio">
-                    <Book book={book} index={0} bookAddable={false} wallH={760} bookRows={5} imgsLoaded={true}/>
-                </div>
-                <div class="shelves">
-                    <Shelf shelfW={100} shelfHasShadow={false} wallH={760} bookRows={5} />
-                </div>
-            </div>
-        {/each}
-    </div>
-    <Prose copy={copy.lookBackB[0]}/>
-    <h5>Historical Romance Novel Covers</h5>
-    <div class="book-wrapper">
-        {#each lookbackData.slice(0,5) as book, i}
-            <div class="highlightBook">
-                <div class="books">
-                    <Book book={book} index={0} bookAddable={false} wallH={760} bookRows={5} imgsLoaded={true}/>
-                </div>
-                <div class="shelves">
-                    <Shelf shelfW={100} shelfHasShadow={false} wallH={760} bookRows={5}/>
-                </div>
-            </div>
-        {/each}
-    </div>
-    <Prose copy={copy.postLookBack[0]}/>
-    <h5>Percentage of Romance Novel Covers Featuring...</h5>
-    <SmallMultiples /> -->
 </section>
 
 <style>
-    /* #lookback {
-        background: var(--romance-bg-pink);
-        padding: 0 0 4rem 10rem;
-    } */
+    .custom-link {
+    color: inherit; /* Faz o link ter a mesma cor que o texto ao redor */
+    text-decoration: underline; /* Remove o sublinhado do link */
+}
+
+     .prose {
+        padding-bottom: 5rem;
+        max-width: 42rem;
+        margin: 0 auto;
+        line-height: 2;
+        padding: 4rem 1rem;
+        font-weight: 500;
+        font-size: var(--16px);
+    }
+
+    @media (max-width: 640px) {
+        .prose {
+            margin-top: 5rem;
+            max-width: 24rem;
+            margin-left:2rem;
+        }
+    }
+
+   
     :global(#lookback a) {
 		/* background-image: linear-gradient(180deg,transparent 0,var(--romance-pink-light) 0); */
 	}
