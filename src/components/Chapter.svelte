@@ -70,6 +70,8 @@
         "",
         "Esse modelo investe na qualificação da educação integral e desenvolve uma aprendizagem baseada em projetos, atividades mão na massa e recursos que promovam a cultura digital.",
         "",
+        "",
+        "",
         ""
   ]
 
