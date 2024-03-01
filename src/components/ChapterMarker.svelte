@@ -51,7 +51,7 @@
                 <img src="assets/images/logo.png" alt="Logo Prefeitura">
             </a>
         </div>
-        <div class="sect-btns">
+        <!-- <div class="sect-btns">
             {#each sections as section, i}
                 {@const active = $activeSection == section ? "active" : ""}
                 <div class="btn-wrapper"
@@ -65,7 +65,7 @@
                     <p class="label {active}">{resetTitles(section)}</p>
                 </div>
             {/each}
-        </div>
+        </div> -->
     </div>
 </nav>
 
