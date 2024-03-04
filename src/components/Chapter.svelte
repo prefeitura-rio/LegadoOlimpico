@@ -72,7 +72,7 @@
         "",
         "",
         "",
-        ""
+        "E aqui está a escola nova!"
   ]
 
     export let id;
@@ -107,19 +107,38 @@
 
     
     $: scrollY, checkScrollY(scrollY);
+
     let legenda;
+    let legenda2;
+    let legendaEsquerda;
+    let legendaDireita;
 
 $: {
     if (currentImageEsquerda === f01_esquerda) {
       legenda = 'Clique nos botões abaixo.';
+      legenda2 = 'Texto explicativo 1';
+      legendaEsquerda = 'Legenda esquerda 1';
+      legendaDireita = 'Legenda direita 1';
     } else if (currentImageEsquerda === f05_esquerda) {
       legenda = 'Arquibancadas';
+      legenda2 = 'Texto explicativo 2';
+      legendaEsquerda = 'Legenda esquerda 2';
+      legendaDireita = 'Legenda direita 2';
     } else if (currentImageEsquerda === f04_esquerda) {
       legenda = 'Fachada';
+      legenda2 = 'Texto explicativo 3';
+      legendaEsquerda = 'Legenda esquerda 3';
+      legendaDireita = 'Legenda direita 3';
     } else if (currentImageEsquerda === f03_esquerda) {
       legenda = 'Drywall';
+      legenda2 = 'Texto explicativo 4';
+      legendaEsquerda = 'Legenda esquerda 4';
+      legendaDireita = 'Legenda direita 4';
     } else if (currentImageEsquerda === f02_esquerda) {
       legenda = 'Louças';
+      legenda2 = 'Texto explicativo 5';
+      legendaEsquerda = 'Legenda esquerda 5';
+      legendaDireita = 'Legenda direita 5';
     } else {
       legenda = 'legenda padrão';
     }
@@ -136,23 +155,33 @@ $: {
             <YardsaleScrolly words={scrolly1} container="scrolly1"  />
         {/if}
         {#if id == "illustration"}
+        <div class="legendas">
         <div class="legenda"> {legenda}</div>
+        <div class="legenda2"> {legenda2}</div>
+       </div>
         <div class="container">
-           
             <div class="image-container">
                 <img class="img2_left" src={currentImageEsquerda} alt="img2_left" in:fade={{ delay: 0 }} out:fade />
+                <div class="primeira-imagem">
+                  <p style="display:flex;align-items:center"><span style="font-size: 2.5rem;padding-right:0.8rem">❚</span> {legendaEsquerda}</p>
+                </div>
                <!--reseta / images iniciais-->
-                <button class="image-button" style="top: 68%; left: 63%;" on:click={() => (currentImageEsquerda = f01_esquerda) && (currentImageDireita = f01_direita)}>+</button>
+                <button data-tooltip="Clique nos botões" class="image-button" style="top: 68%; left: 63%;" on:click={() => (currentImageEsquerda = f01_esquerda) && (currentImageDireita = f01_direita)}>+</button>
                 <!--arquibancada-->
-                <button class="image-button" style="top: 53%; left: 40%;" on:click={() => (currentImageEsquerda = f05_esquerda) && (currentImageDireita = f05_direita)}>+</button>
+                <button data-tooltip="Arquibancadas" class="image-button" style="top: 53%; left: 40%;" on:click={() => (currentImageEsquerda = f05_esquerda) && (currentImageDireita = f05_direita)}>+</button>
                 <!--fachada-->
-                <button class="image-button" style="top: 65%; left: 10%;" on:click={() => (currentImageEsquerda = f04_esquerda) && (currentImageDireita = f04_direita)}>+</button>
+                <button data-tooltip="Fachada" class="image-button" style="top: 65%; left: 10%;" on:click={() => (currentImageEsquerda = f04_esquerda) && (currentImageDireita = f04_direita)}>+</button>
                 <!--drywall-->
-                <button class="image-button" style="top: 77%; left: 30%;" on:click={() => (currentImageEsquerda = f03_esquerda) && (currentImageDireita = f03_direita)}>+</button>
+                <button data-tooltip="Drywall" class="image-button" style="top: 77%; left: 30%;" on:click={() => (currentImageEsquerda = f03_esquerda) && (currentImageDireita = f03_direita)}>+</button>
                <!--louças-->
-                <button class="image-button" style="top: 53%; left: 90%;" on:click={() => (currentImageEsquerda = f02_esquerda) && (currentImageDireita = f02_direita)}>+</button>
+                <button data-tooltip="Louças" class="image-button" style="top: 53%; left: 90%;" on:click={() => (currentImageEsquerda = f02_esquerda) && (currentImageDireita = f02_direita)}>+</button>
             </div>
+            <div class="image-container">
             <img src={currentImageDireita} alt="currentImage" in:fade={{ delay: 0 }} out:fade />
+            <div class="segunda-imagem">
+              <p style="display:flex;align-items:center">{legendaDireita} <span style="font-size: 2.5rem;padding-left:0.8rem">❚</span></p>
+          </div>
+          </div>
         </div>
         {/if}
     {/if}
@@ -160,25 +189,79 @@ $: {
 </section>
 
 <style>
+  .image-button:hover::after {
+    margin-bottom: 3px;
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+    /* Additional styling as needed */
+}
+  .segunda-imagem{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+    margin-top: -3rem;
+    color: #333; 
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .primeira-imagem{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+    margin-top: -3rem;
+    color: #333; 
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 .legenda{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     flex-direction: column;
-    max-width: 38rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 1rem; 
-    border: 1px solid #333; 
-    text-align: center;
-    border-radius: 50px;
-    background-color: #f5f5f5; 
     color: #333; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
-    margin-bottom: 20px !important;
+    /* margin-bottom: 20px !important; */
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.legenda2{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1rem; 
+    color: #333; 
+    margin-top: -20px !important;
+    font-size: 1rem;
+    
 }
 @media (max-width: 640px) {
     .legenda {
-        max-width: 24rem;
+        text-align: left;
     }
+    .primeira-imagem{
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+    .segunda-imagem{
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+  }
 }
 .container {
   margin: 0 auto;

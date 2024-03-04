@@ -318,26 +318,7 @@
 		font-size: 36px;
 		/* transition: all 0.5s; */
 	}
-	@container title (min-width: 275px) {
-		.book-cover h1 {
-			font-size: 40px;
-		}
-	}
-	@container title (min-width: 325px) {
-		.book-cover h1 {
-			font-size: 48px;
-		}
-	}
-	@container title (min-width: 375px) {
-		.book-cover h1 {
-			font-size: 56px;
-		}
-	}
-	@container title (min-width: 450px) {
-		.book-cover h1 {
-			font-size: 68px;
-		}
-	}
+	
 	.book-cover .byline {
 		font-family: var(--serif-display);
 		position: absolute;

@@ -20,19 +20,19 @@
             <p>{@html text.value}</p>
             {:else if text.value == "foto1"}
             <img style="padding-top: 5rem;" src={est_aqua1} alt="Foto" />
-            <p class="image-caption">Estádio Aquático Olímpico. (Foto: Renato Sette Camara/Prefeitura do Rio) </p>
+            <p class="image-caption">Estádio Aquático Olímpico.<br> (Foto: Renato Sette Camara/Prefeitura do Rio) </p>
             {:else if text.value == "foto1.1"}
             <img style="padding-top: 5rem;" src={est_aqua2} alt="Foto" />
-            <p class="image-caption">Projeto para construção do Parque Oeste (Foto: Divulgação/Prefeitura do Rio)</p>
+            <p class="image-caption">Projeto para construção do Parque Oeste <br>(Foto: Divulgação/Prefeitura do Rio)</p>
             {:else if text.value == "foto1.2"}
             <img style="padding-top: 5rem;" src={est_aqua3} alt="Foto" />
-            <p class="image-caption">Projeto para construção do Parque Oeste (Foto: Divulgação/Prefeitura do Rio)</p>
+            <p class="image-caption">Projeto para construção do Parque Oeste<br> (Foto: Divulgação/Prefeitura do Rio)</p>
             {:else if text.value == "foto3"}
             <img style="padding-top: 5rem;" src={tg} alt="Foto" />
-            <p class="image-caption">Terminal Gentileza (Foto: Marcelo Piu/Prefeitura do Rio)</p>
+            <p class="image-caption">Terminal Gentileza <br>(Foto: Marcelo Piu/Prefeitura do Rio)</p>
             {:else if text.value == "foto4"}
             <img style="padding-top: 5rem;" src={ibc} alt="Foto" />
-            <p class="image-caption">Fachada do IBC (Foto: Ricardo Cassiano/Prefeitura do Rio)</p>
+            <p class="image-caption">Fachada do IBC <br>(Foto: Ricardo Cassiano/Prefeitura do Rio)</p>
             {:else if text.value == "foto2"}
             <div class="image-container">
             <iframe width="670" height="400" src="https://www.youtube.com/embed/d1bsrglUj6A?si=JQBsI3PdFvW1zrQ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -60,7 +60,9 @@
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 5rem;
-        gap:1rem
+        padding-top:6rem;
+        gap:1rem;
+        scale:1.1
     }
 
     .image-container img {
@@ -75,6 +77,9 @@
         .image-container {
             justify-content: center;
             gap:0.5rem
+        }
+        .image-caption{
+            text-align: left;
         }
     }
 
@@ -98,7 +103,7 @@
     @media (max-width: 640px) {
         .prose {
           
-            max-width: 26rem;
+            /* max-width: 26rem; */
             margin-left:2.2rem;
         }
     }

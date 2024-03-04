@@ -609,11 +609,7 @@
 	.scrollyBackground {
 		position: sticky;
 		top: 0;
-		/* width: 100%; */
-		/* margin: auto auto; */
 		height: 100vh;
-		/* border: 3px solid #000; */
-		/* max-width: 95vh; */
 		z-index: -1;
 		transition: opacity 500ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
 	}
@@ -637,39 +633,7 @@
 		top: -125%;
 		pointer-events: none;
 	}
-	@keyframes grain {
-		0%,
-		100% {
-			transform: translate(0, 0);
-		}
-		10% {
-			transform: translate(-5%, -10%);
-		}
-		20% {
-			transform: translate(8%, 5%);
-		}
-		30% {
-			transform: translate(-7%, -5%);
-		}
-		40% {
-			transform: translate(5%, 20%);
-		}
-		50% {
-			transform: translate(-15%, -10%);
-		}
-		60% {
-			transform: translate(0%, 0%);
-		}
-		70% {
-			transform: translate(0%, -12%);
-		}
-		80% {
-			transform: translate(-10%, 12%);
-		}
-		90% {
-			transform: translate(10%, -10%);
-		}
-	}
+
 	.scrolldown_hint {
 		position: absolute;
 		width: 0;
@@ -723,7 +687,7 @@
 	}
 	.step {
 		display: block;
-		height: 100vh;
+	  height: 50vh; 	/* 100vh para 1 foto por texto */
 		text-align: left;
 		width: 100%;
 		min-width: 200px;

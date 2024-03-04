@@ -295,7 +295,7 @@
   "raceText": [
     {
       "type": "text",
-      "value": " O <span style='font-weight:bold;'>Estádio Aquático Olímpico</span>, uma das estruturas pensadas com o conceito de arquitetura nômade para as Olimpíadas Rio 2016, também já começou a ser desmontado para dar início a outros projetos. <br><br>A mesma piscina utilizada nas competições será montada no \"<span style='font-weight:bold;'> Parque Oeste.</span>\"<br>Os frequentadores poderão usar a piscina onde o americano Michael Phelps, um dos maiores atletas da história, nadou nos Jogos. Maior medalhista da história da Olimpíada (23 ouros, três pratas e dois bronzes), o atleta conquistou seis delas nesta mesma piscina que ficará disponível para todos os cariocas.<br<br>"    },
+      "value": " O <span style='font-weight:bold;'>Estádio Aquático Olímpico</span>, uma das estruturas pensadas com o conceito de arquitetura nômade para as Olimpíadas Rio 2016, também já começou a ser desmontado para dar início a outros projetos. <br><br>A mesma piscina utilizada nas competições será montada no \"<span style='font-weight:bold;'> Parque Oeste</span>\".<br>Os frequentadores poderão usar a piscina onde o americano Michael Phelps, um dos maiores atletas da história, nadou nos Jogos. Maior medalhista da história da Olimpíada (23 ouros, três pratas e dois bronzes), o atleta conquistou seis delas nesta mesma piscina que ficará disponível para todos os cariocas.<br<br>"    },
     {
       "type": "text",
       "value": "<br>O parque ficará em um terreno de mais de 234 mil metros quadrados na Avenida Cesário de Melo, em Inhoaíba. O megaparque será sustentável, preservando e oferecendo novas áreas verdes para a cidade, com equipamentos culturais e esportivos. Entre as benfeitorias, estão a Vila Olímpica, Nave do Conhecimento, quadras poliesportivas, espaço ecumênico, pista de skate, ginásio coberto, palco, além de uma escola para cerca de 800 alunos."
@@ -306,7 +306,7 @@
     },
     {
       "type": "text",
-      "value": "<br>Outra parte das estruturas da instalação que recebeu as provas de natação dos Jogos Olímpicos e Paralímpicos Rio 2016 foi doada para o \"<span style='font-weight:bold;'>Bangu Atlético Clube. </span>\""
+      "value": "<br>Outra parte das estruturas da instalação que recebeu as provas de natação dos Jogos Olímpicos e Paralímpicos Rio 2016 foi doada para o \"<span style='font-weight:bold;'>Bangu Atlético Clube </span>\"."
     },
     {
       "type": "text",
@@ -316,10 +316,7 @@
       "type": "text",
       "value": "foto1"
     },
-    {
-      "type": "text",
-      "value": "foto1.1"
-    },
+
     {
       "type": "text",
       "value": "foto1.2"
@@ -346,7 +343,7 @@
     },
     {
       "type": "text",
-      "value": "<br><br>Visto pelo mundo, projetado para quem vive aqui. É assim que a Prefeitura do Rio vem executando as obras do legado olímpico na cidade. Os jogos terminaram em 2016 mas a transformação da cidade continua em andamento.<br><br><br>"
+      "value": "<br><br><span style='font-weight:bold;'> Visto pelo mundo, projetado para quem vive aqui.</span> É assim que a Prefeitura do Rio vem executando as obras do legado olímpico na cidade. Os jogos terminaram em 2016 mas a transformação da cidade continua em andamento.<br><br><br>"
     },
     {
       "type": "text",
