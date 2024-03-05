@@ -8,14 +8,14 @@
 	import YardsaleScrolly from "./Yardsale.scrolly.svelte";
 
     import f01_esquerda from "$images/esquerda/f01d.jpg";
-    import f02_esquerda from "$images/esquerda/f02b.jpg";
-    import f03_esquerda from "$images/esquerda/f03.jpg";
+    import f02_esquerda from "$images/esquerda/f03.jpg";
+    import f03_esquerda from "$images/esquerda/f02b.jpg";
     import f04_esquerda from "$images/esquerda/f04.jpg";
     import f05_esquerda from "$images/esquerda/f05.jpg";
 
     import f01_direita from "$images/direita/f01b.jpg";
-    import f02_direita from "$images/direita/f02.jpg";
-    import f03_direita from "$images/direita/f03.jpg";
+    import f02_direita from "$images/direita/f03.jpg";
+    import f03_direita from "$images/direita/f02.jpg";
     import f04_direita from "$images/direita/f04.jpg";
     import f05_direita from "$images/direita/f05.jpg";
   
