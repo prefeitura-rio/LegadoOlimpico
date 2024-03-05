@@ -44,6 +44,7 @@
 	"dependencies": {
 		"@leveluptuts/svelte-fit": "^1.0.3",
 		"image-downloader": "^4.3.0",
+		"svelte-device-info": "^1.0.4",
 		"svelte-lazy-loader": "^1.0.0",
 		"url-exist": "^3.0.1",
 		"url-exists": "^1.0.3"

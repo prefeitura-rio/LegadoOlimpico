@@ -137,7 +137,17 @@
   "raunchinessText": [
     {
       "type": "text",
-      "value": "<br><br><br> Alguns dos materiais utilizados na Arena do Futuro também estão sendo  destinados a outros dois projetos. <br><br>O <span style='font-weight:bold;'>Estádio Luso-Brasileiro</span>,  que já recebeu as estruturas das arquibancadas e da cobertura. A doação permitirá aumentar a capacidade de público do local, que é de 5.044 para 16 mil espectadores. A retirada, transporte e obra serão custeadas pelo próprio clube.<br><br>Já a <span style='font-weight:bold;'>Escola de Samba Lins Imperial</span>, localizada no bairro de Lins de  Vasconcelos, recebeu a doação de isolantes acústicos para corrigir problemas de vazamento de som em sua sede."    
+      "value": "<br><br><br> Alguns dos materiais utilizados na Arena do Futuro também estão sendo  destinados a outros dois projetos. "
+    
+    },
+    {
+      "type": "text",
+      "value": "<br>Já a <span style='font-weight:bold;'>Escola de Samba Lins Imperial</span>, localizada no bairro de Lins de  Vasconcelos, recebeu a doação de isolantes acústicos para corrigir problemas de vazamento de som em sua sede."
+    },
+    {
+      "type": "text",
+      "value": "<br>O <span style='font-weight:bold;'>Estádio Luso-Brasileiro</span>,  que já recebeu as estruturas das arquibancadas e da cobertura. A doação permitirá aumentar a capacidade de público do local, que é de 5.044 para 16 mil espectadores. A retirada, transporte e obra serão custeadas pelo próprio clube.<br><br>",
+      "card":"card01"
     }
     
   ],
@@ -295,8 +305,10 @@
   "raceText": [
     {
       "type": "text",
-      "value": " O <span style='font-weight:bold;'>Estádio Aquático Olímpico</span>, uma das estruturas pensadas com o conceito de arquitetura nômade para as Olimpíadas Rio 2016, também já começou a ser desmontado para dar início a outros projetos. <br><br>A mesma piscina utilizada nas competições será montada no \"<span style='font-weight:bold;'> Parque Oeste</span>\".<br>Os frequentadores poderão usar a piscina onde o americano Michael Phelps, um dos maiores atletas da história, nadou nos Jogos. Maior medalhista da história da Olimpíada (23 ouros, três pratas e dois bronzes), o atleta conquistou seis delas nesta mesma piscina que ficará disponível para todos os cariocas.<br<br>"    },
-    {
+      "value": " O <span style='font-weight:bold;'>Estádio Aquático Olímpico</span>, uma das estruturas pensadas com o conceito de arquitetura nômade para as Olimpíadas Rio 2016, também já começou a ser desmontado para dar início a outros projetos. <br><br>A mesma piscina utilizada nas competições será montada no \"<span style='font-weight:bold;'> Parque Oeste</span>\".<br>Os frequentadores poderão usar a piscina onde o americano Michael Phelps, um dos maiores atletas da história, nadou nos Jogos. Maior medalhista da história da Olimpíada (23 ouros, três pratas e dois bronzes), o atleta conquistou seis delas nesta mesma piscina que ficará disponível para todos os cariocas.<br<br>"  ,
+      "card":"card06"
+    },
+      {
       "type": "text",
       "value": "<br>O parque ficará em um terreno de mais de 234 mil metros quadrados na Avenida Cesário de Melo, em Inhoaíba. O megaparque será sustentável, preservando e oferecendo novas áreas verdes para a cidade, com equipamentos culturais e esportivos. Entre as benfeitorias, estão a Vila Olímpica, Nave do Conhecimento, quadras poliesportivas, espaço ecumênico, pista de skate, ginásio coberto, palco, além de uma escola para cerca de 800 alunos."
     },

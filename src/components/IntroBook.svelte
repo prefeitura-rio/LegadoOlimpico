@@ -60,6 +60,13 @@
 }
 }
 
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+	.title {
+	height: 55vh;
+	}
+}
+
+
 /* .css-grid {
 	position: inherit;
 	z-index: 1 !important;

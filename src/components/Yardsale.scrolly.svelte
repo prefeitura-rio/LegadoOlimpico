@@ -488,6 +488,10 @@
 
 <svelte:window bind:innerHeight={containerHeight} />
 <div class="interactive_container">
+	<!-- <div id="rotate-phone-icon"> -->
+		<!-- <img width="50px" src="assets/yardsale/art/rotate.png" alt="Rotate Phone"/> -->
+		<!-- <p>Gire o celular na horizontal.</p>  -->
+	<!-- </div> -->
 	<section class="scrolly" id={container}>
 		<div
 			class="scrollyBackground"
@@ -547,6 +551,7 @@
 	.interactive_container {
 		padding: 10px 0;
 		font-family: "National 2 Web", sans-serif;
+
 	}
 
 	.gameContainer {
@@ -712,19 +717,45 @@
 		border-radius: 12px;
 		/* border: 1px solid black; */
 	}
+@media (min-width: 640px) {
+	#rotate-phone-icon {
+		display: none;
+}
+}
+@media only screen and (max-width: 640px) {
+	#rotate-phone-icon {
+        height: 20vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
 
-	@media only screen and (max-width: 640px) {
+    #rotate-phone-icon img {
+        animation: rotateAnimation 2s infinite;
+    }
+
+    @keyframes rotateAnimation {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(20deg); }
+        100% { transform: rotate(0deg); }
+    }
+
 		.scrollyBackground {
+			position: sticky;
 			margin: 0% auto;
 			min-height: none;
-
+			border: 3px solid #000;
+			margin: auto auto;
 			float: none;
-			width: 110%;
+			width: 100%;
 			top: 37%;
 			height: 30vh;
+			overflow-x: hidden;
 		}
 		.step > p {
 			width: 90%;
 		}
 	}
+
 </style>

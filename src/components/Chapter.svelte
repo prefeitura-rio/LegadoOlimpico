@@ -115,30 +115,30 @@
 
 $: {
     if (currentImageEsquerda === f01_esquerda) {
-      legenda = 'Clique nos botões abaixo.';
-      legenda2 = 'Texto explicativo 1';
-      legendaEsquerda = 'Legenda esquerda 1';
-      legendaDireita = 'Legenda direita 1';
+      legenda = 'Veja que fim levou a Arena do Futuro';
+      legenda2 = 'Clique nos botões abaixo';
+      legendaEsquerda = 'Arena do Futuro';
+      legendaDireita = 'Ginásio Experimental Tecnológico';
     } else if (currentImageEsquerda === f05_esquerda) {
       legenda = 'Arquibancadas';
-      legenda2 = 'Texto explicativo 2';
-      legendaEsquerda = 'Legenda esquerda 2';
-      legendaDireita = 'Legenda direita 2';
+      legenda2 = 'Na imagem abaixo vemos as Arquibancadas da Arena do Futuro. Ela foi concebida numa estrutura de concreto pré-moldado que permite sua montagem e desmontagem, assim como a estrutura metálica da cobertura. Esses elementos construtivos foram doados ao Estádio Luso-Brasileiro, de propriedade Portuguesa-RJ, na Ilha do Governador. A doação vai permitir aumentar a capacidade de público do local que é de 5.044 para 16 mil espectadores.';
+      legendaEsquerda = 'Arena do Futuro';
+      legendaDireita = 'Estádio Luso-Brasileiro';
     } else if (currentImageEsquerda === f04_esquerda) {
       legenda = 'Fachada';
-      legenda2 = 'Texto explicativo 3';
-      legendaEsquerda = 'Legenda esquerda 3';
-      legendaDireita = 'Legenda direita 3';
+      legenda2 = 'Na imagem abaixo vemos em destaque o brise que compõe a fachada da Arena do Futuro. Esse elemento permite a entrada de ventilação natural ao mesmo tempo que proporciona uma proteção da incidência solar.  Os Brises foram reaproveitados em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
+      legendaEsquerda = 'Arena do Futuro';
+      legendaDireita = 'Ginásio Experimental Tecnológico';
     } else if (currentImageEsquerda === f03_esquerda) {
-      legenda = 'Drywall';
-      legenda2 = 'Texto explicativo 4';
-      legendaEsquerda = 'Legenda esquerda 4';
-      legendaDireita = 'Legenda direita 4';
+      legenda = 'Divisórias';
+      legenda2 = 'Na imagem abaixo vemos as divisórias da Arena do Futuro. Tratam-se das paredes internas dos ambientes, compostas por uma subestrutura metálica e um fechamento em gesso acartonado (drywall), permintindo assim que sua instalação seja feita através de encaixes e parafusos. Estas paredes foram reaproveitadas em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
+      legendaEsquerda = 'Arena do Futuro';
+      legendaDireita = 'Ginásio Experimental Tecnológico';
     } else if (currentImageEsquerda === f02_esquerda) {
       legenda = 'Louças';
-      legenda2 = 'Texto explicativo 5';
-      legendaEsquerda = 'Legenda esquerda 5';
-      legendaDireita = 'Legenda direita 5';
+      legenda2 = 'Na imagem abaixo vemos as louças dos banheiros da Arena do Futuro. Tratam-se das pias, privadas e mictórios que foram reaproveitados em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
+      legendaEsquerda = 'Arena do Futuro';
+      legendaDireita = 'Ginásio Experimental Tecnológico';
     } else {
       legenda = 'legenda padrão';
     }
@@ -172,7 +172,7 @@ $: {
                 <!--fachada-->
                 <button data-tooltip="Fachada" class="image-button" style="top: 65%; left: 10%;" on:click={() => (currentImageEsquerda = f04_esquerda) && (currentImageDireita = f04_direita)}>+</button>
                 <!--drywall-->
-                <button data-tooltip="Drywall" class="image-button" style="top: 77%; left: 30%;" on:click={() => (currentImageEsquerda = f03_esquerda) && (currentImageDireita = f03_direita)}>+</button>
+                <button data-tooltip="Divisórias" class="image-button" style="top: 77%; left: 30%;" on:click={() => (currentImageEsquerda = f03_esquerda) && (currentImageDireita = f03_direita)}>+</button>
                <!--louças-->
                 <button data-tooltip="Louças" class="image-button" style="top: 53%; left: 90%;" on:click={() => (currentImageEsquerda = f02_esquerda) && (currentImageDireita = f02_direita)}>+</button>
             </div>
@@ -232,7 +232,7 @@ $: {
     padding: 1rem; 
     color: #333; 
     /* margin-bottom: 20px !important; */
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -245,22 +245,27 @@ $: {
     padding: 1rem; 
     color: #333; 
     margin-top: -20px !important;
-    font-size: 1rem;
+    font-size: var(--16px);
     
 }
 @media (max-width: 640px) {
     .legenda {
         text-align: left;
+        margin-left: -1rem;
+    }
+    .legenda2 {
+        text-align: left;
+        margin-left: -1rem;
     }
     .primeira-imagem{
     display: flex;
     justify-content: center;
-    padding-left: 2rem;
+    margin-left: -1rem;
   }
     .segunda-imagem{
     display: flex;
     justify-content: center;
-    padding-left: 2rem;
+    margin-left: 2rem;
   }
 }
 .container {

@@ -36,6 +36,11 @@
  </footer>
  
  <style>
+	@media (max-width: 640px) {
+		.footer{
+			margin-left: 0.9rem ;
+		}
+	}
 	#autores, #agradecimentos, #prefeito{
 		font-size: 25px;
 	}

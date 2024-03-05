@@ -119,7 +119,7 @@
         .prose {
             margin-top: 5rem;
             max-width: 26rem;
-            margin-left:2.2rem;
+            /* margin-left:2.2rem; */
             padding: 4rem 0;
             font-size: var(--15px);
             font-weight: bold;

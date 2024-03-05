@@ -69,6 +69,7 @@
 </script>
 
 <svelte:window bind:innerWidth={w} bind:innerHeight={h} bind:scrollY={scrollY} />
+<div class="ajuste">
 <ChapterMarker />
 <!-- CSS Grid HTML aqui -->
 <div class="css-grid">
@@ -90,8 +91,13 @@
 </div>
 
 <Footer />
-
+</div>
 <style>
+@media (max-width: 640px) {
+	.ajuste {
+		padding-left: 1.2rem;
+	}
+}
 @media (min-width: 600px) {
 	
 .css-grid {
@@ -224,7 +230,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card01.png');
 	 background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform: rotate(25deg) translateY(10rem) translateX(-11rem); 
+	 transform: rotate(-15deg) translateY(10rem) translateX(-2rem); 
 	 grid-row-start: 1;
 	 grid-column-start: 1;
 	 grid-row-end: 4;
@@ -237,7 +243,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card02.png');
 	 background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform: rotate(-15deg) translateY(2rem) translateX(-4rem);
+	 transform: rotate(15deg) translateY(5rem) translateX(-5rem);
 	
 	 grid-row-start: 1;
 	 grid-column-start: 5;
@@ -252,14 +258,14 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card03.png');
 	 background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform: rotate(5deg) translateY(3rem) translateX(-8.5rem);
+	 transform: rotate(-10deg) translateY(3rem) translateX(-3rem);
 	 grid-row-start: 1;
 	 grid-column-start: 9;
 	
 	 grid-row-end: 3;
 	 grid-column-end: 11;
 	
-	 /* scale: 1.1; */
+	 scale: 1.1;
 	 
 	}
 	 #item-3 {
@@ -267,7 +273,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card04.png');
 	 background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform: rotate(20deg) translateY(8rem) translateX(5rem);
+	 transform: rotate(15deg) translateY(12rem) translateX(4rem);
 	 /* grid-row-start: 1;
 	 grid-column-start: 9;
 	
@@ -275,6 +281,7 @@ background-image: url('$images/card06.png');
 	 grid-column-end: 11; */
 	 
 	 scale: 1.8;   
+	 overflow: hidden;
 	 
 	}
 
@@ -283,7 +290,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card05.png');
 	 background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform:  rotate(-20deg) translateY(35rem) translateX(-16rem);
+	 transform:  rotate(-25deg) translateY(40rem) translateX(-14rem);
 	 grid-row-start: 1;
 	 grid-column-start: 1;
 	
@@ -297,13 +304,13 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card06.png');
 	background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform:  rotate(2deg) translateY(58rem) translateX(20rem);
+	 transform:  rotate(0deg) translateY(60rem) translateX(15rem);
 	 grid-row-start: 1;
 	 grid-column-start: 1;
 	
 	 grid-row-end: 4;
 	 grid-column-end: 5;
-	 scale: 0.5;
+	 scale: 0.55;
 	}
 	
 	#item-6 {
@@ -311,7 +318,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card07.png');
 	background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform:  rotate(18deg) translateY(32rem) translateX(49rem);
+	 transform:  rotate(10deg) translateY(45rem) translateX(38rem);
 	 grid-row-start: 1;
 	 grid-column-start: 1;
 	
@@ -321,4 +328,118 @@ background-image: url('$images/card06.png');
 	 
 	}
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+ 	
+.css-grid {
+
+position: absolute; 
+left: 0; /* Alinha a esquerda do elemento com a esquerda da viewport */
+width: 100vw; /* Define a largura do elemento para a largura total da viewport */
+height: 200vh;
+z-index: -1; 
+
+display: none;
+grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+#item-0 {
+background-image: url('$images/card01.png');
+background-size: contain;
+background-repeat: no-repeat; 
+transform: rotate(25deg) translateY(10rem) translateX(-10rem); 
+grid-row-start: 1;
+grid-column-start: 1;
+grid-row-end: 4;
+grid-column-end: 5; 
+scale: 0.5;
+
+}
+#item-1 {
+
+background-image: url('$images/card02.png');
+background-size: contain;
+background-repeat: no-repeat; 
+transform: rotate(-15deg) translateY(-10rem) translateX(-5rem);
+
+grid-row-start: 1;
+grid-column-start: 5;
+
+grid-row-end: 3;
+grid-column-end: 7;
+
+scale: 0.6;
+}
+#item-2 {
+
+background-image: url('$images/card03.png');
+background-size: contain;
+background-repeat: no-repeat; 
+transform: rotate(-25deg) translateY(-5rem) translateX(-5rem);
+grid-row-start: 1;
+grid-column-start: 9;
+
+grid-row-end: 3;
+grid-column-end: 11;
+
+scale: 0.8;
+
+}
+#item-3 {
+
+background-image: url('$images/card04.png');
+background-size: contain;
+background-repeat: no-repeat; 
+transform: rotate(-10deg) translateY(-10rem) translateX(-20rem);
+grid-row-start: 4;
+grid-column-start: 3;
+
+grid-row-end: 6;
+grid-column-end: 5;
+
+scale: 0.8;   
+
+}
+#item-4 {
+
+background-image: url('$images/card05.png');
+background-size: contain;
+background-repeat: no-repeat; 
+transform: rotate(15deg) translateY(-10rem) translateX(20rem);
+grid-row-start: 4;
+grid-column-start: 7;
+
+grid-row-end: 6;
+grid-column-end: 9;
+scale: 0.9;
+
+}
+#item-5 {
+
+background-image: url('$images/card06.png');
+background-size: contain;
+background-repeat: no-repeat; 
+transform: rotate(14deg) translateY(30rem) translateX(35rem); 
+grid-row-start: 1;
+grid-column-start: 1;
+grid-row-end: 4;
+grid-column-end: 5; 
+scale: 0.4;
+}
+#item-6 {
+
+background-image: url('$images/card07.png');
+background-size: contain;
+background-repeat: no-repeat; 
+transform: rotate(-20deg) translateY(55rem) translateX(-5rem) ;
+grid-row-start: 1;
+grid-column-start: 6;
+
+grid-row-end: 3;
+grid-column-end: 8;
+scale: 0.4;
+
+}}
+
 </style>
