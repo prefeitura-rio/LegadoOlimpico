@@ -54,9 +54,9 @@
 	
 	#sem_elefantes {
 		padding-top: 8rem;
-		padding-bottom: 3rem;
+		padding-bottom: 1.5rem;
 	font-size: 3rem;
-	line-height: 4rem;
+	line-height: 2.8rem;
 }
 }
 

@@ -163,7 +163,7 @@ $: {
             <div class="image-container">
                 <img class="img2_left" src={currentImageEsquerda} alt="img2_left" in:fade={{ delay: 0 }} out:fade />
                 <div class="primeira-imagem">
-                  <p style="display:flex;align-items:center"><span style="font-size: 2.5rem;padding-right:0.8rem">❚</span> {legendaEsquerda}</p>
+                  <p style="display:flex;align-items:center">{legendaEsquerda}</p>
                 </div>
                <!--reseta / images iniciais-->
                 <button data-tooltip="Clique nos botões" class="image-button" style="top: 68%; left: 63%;" on:click={() => (currentImageEsquerda = f01_esquerda) && (currentImageDireita = f01_direita)}>+</button>
@@ -179,7 +179,7 @@ $: {
             <div class="image-container">
             <img src={currentImageDireita} alt="currentImage" in:fade={{ delay: 0 }} out:fade />
             <div class="segunda-imagem">
-              <p style="display:flex;align-items:center">{legendaDireita} <span style="font-size: 2.5rem;padding-left:0.8rem">❚</span></p>
+              <p style="display:flex;align-items:center">{legendaDireita}</p>
           </div>
           </div>
         </div>
@@ -265,7 +265,8 @@ $: {
     .segunda-imagem{
     display: flex;
     justify-content: center;
-    margin-left: 2rem;
+    text-align: center;
+    margin-left: 0rem;
   }
 }
 .container {

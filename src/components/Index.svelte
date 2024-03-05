@@ -230,7 +230,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card01.png');
 	 background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform: rotate(-15deg) translateY(10rem) translateX(-2rem); 
+	 transform: rotate(-15deg) translateY(0rem) translateX(-2rem); 
 	 grid-row-start: 1;
 	 grid-column-start: 1;
 	 grid-row-end: 4;
@@ -273,7 +273,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card04.png');
 	 background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform: rotate(15deg) translateY(12rem) translateX(4rem);
+	 transform: rotate(15deg) translateY(9.5rem) translateX(4rem);
 	 /* grid-row-start: 1;
 	 grid-column-start: 9;
 	
@@ -304,7 +304,7 @@ background-image: url('$images/card06.png');
 	background-image: url('$images/card06.png');
 	background-size: contain;
 	 background-repeat: no-repeat; 
-	 transform:  rotate(0deg) translateY(60rem) translateX(15rem);
+	 transform:  rotate(0deg) translateY(55rem) translateX(15rem);
 	 grid-row-start: 1;
 	 grid-column-start: 1;
 	
