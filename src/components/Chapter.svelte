@@ -72,7 +72,7 @@
         "",
         "",
         "",
-        "E assim nasce uma escola nova para os cariocas, com o ensino mais inovador do país!"
+        "nova-escola"
   ]
 
     export let id;
@@ -266,6 +266,7 @@ $: {
     text-align: center;
     /* flex-direction: row; */
     max-width: 48rem;
+    min-height: 155px;
     margin: 0 auto;
     padding: 1rem; 
     color: #333; 
@@ -274,6 +275,7 @@ $: {
     
 }
 .legenda2combotao{
+  min-height: 155px;
     display: flex;
     justify-content:center;
     text-align: center;
@@ -292,13 +294,14 @@ $: {
         /* margin-left: -1rem; */
     }
     .legenda2 { 
-        /* margin-left: -1rem; */
+        min-height: 300px;
         display: flex;
         justify-content:center;
         text-align: center;
         font-weight:lighter
     }
     .legenda2combotao {
+      min-height: 300px;
         text-align: left;
         margin-left: -1rem;
     }

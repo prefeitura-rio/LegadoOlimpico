@@ -532,7 +532,10 @@
 									Whoa, you lost all your money. Meanwhile, one person ended up
 									with nearly all of the wealth!
 								</p>
-							{:else}
+								{:else if text == "nova-escola"}
+					
+									<p>E assim nasce uma <span style="font-weight:bold">escola nova </span>para os cariocas, com o ensino mais inovador do país!</p>
+								{:else}
 								<p>{text}</p>
 							{/if}
 						</div>
@@ -699,6 +702,11 @@
 		box-sizing: border-box;
 		/* transition: opacity 500ms cubic-bezier(0.25, 0.25, 0.75, 0.75); */
 	}
+	.step:nth-child(n+25) {
+	height: 160vh; 	/* 100vh para 1 foto por texto */
+	/* background-color: #000; */
+}
+
 	.step.stepHidden {
 		opacity: 0;
 		pointer-events: none;

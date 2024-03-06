@@ -114,7 +114,8 @@
     },
     {
       "type": "text",
-      "value": "Assim como um brinquedo de montar e desmontar, a arquitetura nômade permitiu com que três grandes estruturas feitas para os Jogos pudessem se transformar em legado para a cidade. Localizadas no Parque Olímpico na  Barra da Tijuca, estavam a <span style='font-weight:bold;'>Arena do Futuro</span>, instalação desportiva usada para o handebol nas Olimpíadas e goalball no Jogos Paraolímpicos de 2016; o <span style='font-weight:bold;'>Estádio Aquático</span>, sede da natação e polo aquático das competições e o <span style='font-weight:bold;'>Centro Internacional de Transmissão</span> (International Broadcasting Center - IBC), local utilizado pela imprensa para transmissão dos Jogos.<br><br>"
+      "value": "Assim como um brinquedo de montar e desmontar, a arquitetura nômade permitiu com que três grandes estruturas feitas para os Jogos pudessem se transformar em legado para a cidade. Localizadas no Parque Olímpico na  Barra da Tijuca, estavam a <span style='font-weight:bold;'>Arena do Futuro</span>, instalação desportiva usada para o handebol nas Olimpíadas e goalball no Jogos Paraolímpicos de 2016; o <span style='font-weight:bold;'>Estádio Aquático</span>, sede da natação e polo aquático das competições e o <span style='font-weight:bold;'>Centro Internacional de Transmissão</span> (International Broadcasting Center - IBC), local utilizado pela imprensa para transmissão dos Jogos.<br><br>",
+      "card":"card05"
     },
    
     {
@@ -305,7 +306,7 @@
   "raceText": [
     {
       "type": "text",
-      "value": " O <span style='font-weight:bold;'>Estádio Aquático Olímpico</span>, uma das estruturas pensadas com o conceito de arquitetura nômade para as Olimpíadas Rio 2016, também já começou a ser desmontado para dar início a outros projetos. <br><br>A mesma piscina utilizada nas competições será montada no \"<span style='font-weight:bold;'> Parque Oeste</span>\".<br>Os frequentadores poderão usar a piscina onde o americano Michael Phelps, um dos maiores atletas da história, nadou nos Jogos. Maior medalhista da história da Olimpíada (23 ouros, três pratas e dois bronzes), o atleta conquistou seis delas nesta mesma piscina que ficará disponível para todos os cariocas.<br<br>"  ,
+      "value": " O <span style='font-weight:bold;'>Estádio Aquático Olímpico</span>, uma das estruturas pensadas com o conceito de arquitetura nômade para as Olimpíadas Rio 2016, também já começou a ser desmontado para dar início a outros projetos. <br><br>A mesma piscina utilizada nas competições será montada no \"<span style='font-weight:bold;'> Parque Oeste</span>\". Os frequentadores poderão usar a piscina onde o americano Michael Phelps, um dos maiores atletas da história, nadou nos Jogos. Maior medalhista da história da Olimpíada (23 ouros, três pratas e dois bronzes), o atleta conquistou seis delas nesta mesma piscina que ficará disponível para todos os cariocas.<br<br>"  ,
       "card":"card06"
     },
       {

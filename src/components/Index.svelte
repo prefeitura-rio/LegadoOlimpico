@@ -172,7 +172,7 @@ background-image: url('$images/card04.png');
 }
 #item-4 {
 
-background-image: url('$images/card05.png');
+background-image: url('$images/card06.png');
  background-size: contain;
  background-repeat: no-repeat; 
  transform: rotate(15deg) translateY(-10rem) translateX(20rem);
@@ -184,7 +184,7 @@ background-image: url('$images/card05.png');
  scale: 0.9;
  
 }
-#item-5 {
+/* #item-5 {
 
 background-image: url('$images/card06.png');
  background-size: contain;
@@ -195,7 +195,7 @@ background-image: url('$images/card06.png');
  grid-row-end: 4;
  grid-column-end: 5; 
  scale: 0.4;
-}
+} */
 #item-6 {
 
  background-image: url('$images/card07.png');

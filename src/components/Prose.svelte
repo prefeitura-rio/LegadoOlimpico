@@ -10,7 +10,7 @@
 	import est_aqua2 from "$images/est_aqua2.png";
 	import est_aqua3 from "$images/est_aqua3.png";
 	import tg from "$images/tg.png";
-	import ibc from "$images/ibc.png";
+	// import ibc from "$images/ibc.png";
 </script>
 
 <div class="prose">
@@ -35,8 +35,21 @@
 							{@html text.value}
 						</p>
 						<img
-							class="card2Img width:10rem;transform: translate(12rem) rotate(12deg);"
+							class="card2Img"
 							src="assets/yardsale/art/card06.jpg"
+							alt="Foto"
+						/>
+						
+					</div>
+				{/if}
+				{#if text.card && text.card == "card05"}
+					<div style="display:flex; justify-content:center">
+                        <p class="card5Texto">
+							{@html text.value}
+						</p>
+						<img
+							class="card5Img"
+							src="assets/yardsale/art/card05.jpg"
 							alt="Foto"
 						/>
 						
@@ -53,7 +66,10 @@
 				</p> -->
 				<iframe id="teste" allow="fullscreen" allowfullscreen height="400" src="https://streamable.com/e/3cyhpg?muted=1&nocontrols=1&autoplay=1" width="670" style="border:none;"></iframe>
 
-			<!-- {:else if text.value == "foto1.1"}
+				<p class="image-caption">
+					Os cariocas poderão nadar na mesma piscina que o atleta Michael Phelps nadou nas Olimpíadas.
+				</p> 
+				<!-- {:else if text.value == "foto1.1"}
 				<img style="padding-top: 5rem;" src={est_aqua2} alt="Foto" />
 				<p class="image-caption">
 					Projeto para construção do Parque Oeste <br />(Foto:
@@ -66,15 +82,16 @@
 					do Rio)
 				</p> -->
 			{:else if text.value == "foto3"}
-				<img style="padding-top: 5rem;" src={tg} alt="Foto" />
-				<p class="image-caption">
-					Terminal Gentileza <br />(Foto: Marcelo Piu/Prefeitura do Rio)
-				</p>
-			{:else if text.value == "foto4"}
-				<img style="padding-top: 5rem;" src={ibc} alt="Foto" />
+			<img style="padding-top: 5rem;" src="assets/yardsale/art/ibc.jpg" alt="Foto" />
 				<p class="image-caption">
 					Fachada do IBC <br />(Foto: Ricardo Cassiano/Prefeitura do Rio)
 				</p>
+			
+			{:else if text.value == "foto4"}
+			<img style="padding-top: 5rem;" src={tg} alt="Foto" />
+			<p class="image-caption">
+				Terminal Gentileza <br />(Foto: Marcelo Piu/Prefeitura do Rio)
+			</p>
 			{:else if text.value == "foto2"}
 				<div class="image-container">
 					<iframe
@@ -165,6 +182,9 @@
         .card2Img{
             display:none;
         }
+        .card5Img{
+            display:none;
+        }
 	}
 
     @media (min-width: 640px) {
@@ -184,6 +204,14 @@
             min-width:42rem !important;
             transform: translate(5rem)
         }
+        .card5Img {
+            width:10rem;
+            transform: translate(12rem) rotate(12deg);
+        }
+        .card5Texto {
+            min-width:42rem !important;
+            transform: translate(5rem)
+        }
     }
     @media (max-height: 500px) and (orientation: landscape) {
         .card1Img{
@@ -197,6 +225,13 @@
             display:none;
         }
         .card2Texto {
+            /* min-width:42rem !important; */
+            transform: translate(-0rem)
+        }
+        .card5Img{
+            display:none;
+        }
+        .card5Texto {
             /* min-width:42rem !important; */
             transform: translate(-0rem)
         }
