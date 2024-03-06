@@ -310,7 +310,11 @@
     },
       {
       "type": "text",
-      "value": "<br>O parque ficará em um terreno de mais de 234 mil metros quadrados na Avenida Cesário de Melo, em Inhoaíba. O megaparque será sustentável, preservando e oferecendo novas áreas verdes para a cidade, com equipamentos culturais e esportivos. Entre as benfeitorias, estão a Vila Olímpica, Nave do Conhecimento, quadras poliesportivas, espaço ecumênico, pista de skate, ginásio coberto, palco, além de uma escola para cerca de 800 alunos."
+      "value": "<br>O parque ficará em um terreno de mais de 234 mil metros quadrados na Avenida Cesário de Melo, em Inhoaíba. O megaparque será sustentável, preservando e oferecendo novas áreas verdes para a cidade, com equipamentos culturais e esportivos. Entre as benfeitorias, estão a Vila Olímpica, Nave do Conhecimento, quadras poliesportivas, espaço ecumênico, pista de skate, ginásio coberto, palco, além de uma escola para cerca de 800 alunos.<br><br>"
+    },
+    {
+      "type": "text",
+      "value": "foto1"
     },
     {
       "type": "text",
@@ -323,10 +327,6 @@
     {
       "type": "text",
       "value": "O clube da Zona Oeste recebeu materiais que vão permitir fazer a cobertura da arquibancada, da área de transmissão, do estacionamento e das áreas de acesso aos banheiros e vestiários do Estádio Proletário Guilherme da Silveira Filho, o Moça Bonita. O Bangu ainda irá revitalizar as coberturas do estacionamento e das arquibancadas da quadra e o telhado do salão nobre de sua sede social."
-    },
-    {
-      "type": "text",
-      "value": "foto1"
     },
 
     {
