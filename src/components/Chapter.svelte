@@ -159,9 +159,9 @@ $: {
         <div class="legenda"> {legenda}</div>
         {#if legenda2 == 'Clique nos botões abaixo' }
         <div class="legenda2combotao"> 
-          <span>Clique nos botões &nbsp</span>
-          <button data-tooltip="Botão" class="image-button">+</button>
-          <span> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  abaixo</span>
+          <span>Clique nos botões &nbsp&nbsp </span>
+          <button data-tooltip="Botão" class="image-button-example">+</button>
+          <span>&nbsp &nbsp abaixo</span>
         </div>
         {:else}
         <div class="legenda2"> {legenda2}</div>
@@ -213,6 +213,22 @@ $: {
     z-index: 1;
     /* Additional styling as needed */
 }
+  .image-button-example:hover::after {
+    margin-bottom: 3px;
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+    /* Additional styling as needed */
+}
   .segunda-imagem{
     display: flex;
     justify-content: flex-end;
@@ -233,8 +249,8 @@ $: {
   }
 .legenda{
     display: flex;
-    justify-content:flex-start;
-    flex-direction: column;
+    justify-content:center;
+    /* flex-direction: column; */
     max-width: 90rem;
     margin: 0 auto;
     padding: 1rem; 
@@ -242,13 +258,14 @@ $: {
     /* margin-bottom: 20px !important; */
     font-size: 1.8rem;
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .legenda2{
     display: flex;
-    justify-content:flex-start;
-    flex-direction: row;
-    max-width: 90rem;
+    justify-content:center;
+    text-align: center;
+    /* flex-direction: row; */
+    max-width: 48rem;
     margin: 0 auto;
     padding: 1rem; 
     color: #333; 
@@ -257,9 +274,11 @@ $: {
     
 }
 .legenda2combotao{
-  
-    flex-direction: row;
-    max-width: 90rem;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    /* flex-direction: row; */
+    max-width: 48rem;
     margin: 0 auto;
     padding: 1rem; 
     color: #333; 
@@ -269,12 +288,15 @@ $: {
 }
 @media (max-width: 640px) {
     .legenda {
-        text-align: left;
-        margin-left: -1rem;
+        text-align: center;
+        /* margin-left: -1rem; */
     }
-    .legenda2 {
-        text-align: left;
-        margin-left: -1rem;
+    .legenda2 { 
+        /* margin-left: -1rem; */
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        font-weight:lighter
     }
     .legenda2combotao {
         text-align: left;
@@ -284,12 +306,14 @@ $: {
     display: flex;
     justify-content: center;
     margin-left: -1rem;
+    font-size: 1.3rem;
   }
     .segunda-imagem{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left: 0rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
   }
 }
 .container {
@@ -321,6 +345,18 @@ $: {
 
 .image-button {
   position: absolute;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+  padding: 0;
+  border: none;
+  color: white;
+  font-size: 20px; 
+}
+.image-button-example {
+  /* position: absolute; */
   width: 30px; 
   height: 30px; 
   border-radius: 50%;
