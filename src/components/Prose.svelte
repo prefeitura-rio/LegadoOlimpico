@@ -46,23 +46,25 @@
 					<p>{@html text.value}</p>
 				{/if}
 			{:else if text.value == "foto1"}
-				<img style="padding-top: 5rem;" src={est_aqua1} alt="Foto" />
+				<!-- <img style="padding-top: 5rem;" src={est_aqua1} alt="Foto" />
 				<p class="image-caption">
 					Estádio Aquático Olímpico.<br /> (Foto: Renato Sette Camara/Prefeitura
 					do Rio)
-				</p>
-			{:else if text.value == "foto1.1"}
+				</p> -->
+				<iframe allow="fullscreen" allowfullscreen height="400" src="https://streamable.com/e/3cyhpg?muted=1&nocontrols=1&autoplay=1" width="670" style="border:none;"></iframe>
+
+			<!-- {:else if text.value == "foto1.1"}
 				<img style="padding-top: 5rem;" src={est_aqua2} alt="Foto" />
 				<p class="image-caption">
 					Projeto para construção do Parque Oeste <br />(Foto:
 					Divulgação/Prefeitura do Rio)
-				</p>
-			{:else if text.value == "foto1.2"}
+				</p> -->
+			<!-- {:else if text.value == "foto1.2"}
 				<img style="padding-top: 5rem;" src={est_aqua3} alt="Foto" />
 				<p class="image-caption">
 					Projeto para construção do Parque Oeste<br /> (Foto: Divulgação/Prefeitura
 					do Rio)
-				</p>
+				</p> -->
 			{:else if text.value == "foto3"}
 				<img style="padding-top: 5rem;" src={tg} alt="Foto" />
 				<p class="image-caption">

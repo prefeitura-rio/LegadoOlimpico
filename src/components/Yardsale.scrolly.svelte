@@ -748,9 +748,10 @@
 			border: 3px solid #000;
 			margin: auto auto;
 			float: none;
-			width: 100%;
+			width: 105vw;
 			top: 37%;
 			height: 30vh;
+			margin-left: -1.2rem;
 			overflow-x: hidden;
 		}
 		.step > p {

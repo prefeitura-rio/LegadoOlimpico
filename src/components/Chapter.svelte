@@ -72,7 +72,7 @@
         "",
         "",
         "",
-        "E aqui está a escola nova!"
+        "E assim nasce uma escola nova para os cariocas, com o ensino mais inovador do país!"
   ]
 
     export let id;
@@ -121,22 +121,22 @@ $: {
       legendaDireita = 'Ginásio Experimental Tecnológico';
     } else if (currentImageEsquerda === f05_esquerda) {
       legenda = 'Arquibancadas';
-      legenda2 = 'Na imagem abaixo vemos as Arquibancadas da Arena do Futuro. Ela foi concebida numa estrutura de concreto pré-moldado que permite sua montagem e desmontagem, assim como a estrutura metálica da cobertura. Esses elementos construtivos foram doados ao Estádio Luso-Brasileiro, de propriedade Portuguesa-RJ, na Ilha do Governador. A doação vai permitir aumentar a capacidade de público do local que é de 5.044 para 16 mil espectadores.';
+      legenda2 = 'Abaixo vemos as arquibancadas da Arena do Futuro. Elas foram concebidas numa estrutura de concreto pré-moldado que permite a montagem e desmontagem, assim como a estrutura metálica da cobertura. Esses elementos foram doados ao Estádio Luso-Brasileiro, de propriedade Portuguesa-RJ, na Ilha do Governador. A doação permitirá aumentar a capacidade de público do local que é de 5.044 para 16 mil espectadores.';
       legendaEsquerda = 'Arena do Futuro';
       legendaDireita = 'Estádio Luso-Brasileiro';
     } else if (currentImageEsquerda === f04_esquerda) {
       legenda = 'Fachada';
-      legenda2 = 'Na imagem abaixo vemos em destaque o brise que compõe a fachada da Arena do Futuro. Esse elemento permite a entrada de ventilação natural ao mesmo tempo que proporciona uma proteção da incidência solar.  Os Brises foram reaproveitados em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
+      legenda2 = 'Na imagem abaixo vemos em destaque o brise que compõe a fachada da Arena do Futuro. Esse elemento permite a entrada de ventilação natural ao mesmo tempo que proporciona uma proteção da incidência solar. Os brises foram reaproveitados em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
       legendaEsquerda = 'Arena do Futuro';
       legendaDireita = 'Ginásio Experimental Tecnológico';
     } else if (currentImageEsquerda === f03_esquerda) {
       legenda = 'Divisórias';
-      legenda2 = 'Na imagem abaixo vemos as divisórias da Arena do Futuro. Tratam-se das paredes internas dos ambientes, compostas por uma subestrutura metálica e um fechamento em gesso acartonado (drywall), permintindo assim que sua instalação seja feita através de encaixes e parafusos. Estas paredes foram reaproveitadas em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
+      legenda2 = 'As divisórias da Arena do Futuro são paredes internas dos ambientes, compostas por uma subestrutura metálica e um fechamento em gesso acartonado (drywall), permitindo assim que sua instalação seja feita por meio de encaixes e parafusos. Estas paredes foram reaproveitadas em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
       legendaEsquerda = 'Arena do Futuro';
       legendaDireita = 'Ginásio Experimental Tecnológico';
     } else if (currentImageEsquerda === f02_esquerda) {
       legenda = 'Louças';
-      legenda2 = 'Na imagem abaixo vemos as louças dos banheiros da Arena do Futuro. Tratam-se das pias, privadas e mictórios que foram reaproveitados em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
+      legenda2 = 'As louças dos banheiros da Arena do Futuro, como pias, privadas e mictórios, foram reaproveitados em quatro escolas (Ginásios Experimentais Tecnológicos), situadas nos bairros de Bangu, Campo Grande, Rio das Pedras e Santa Cruz.';
       legendaEsquerda = 'Arena do Futuro';
       legendaDireita = 'Ginásio Experimental Tecnológico';
     } else {
@@ -157,7 +157,15 @@ $: {
         {#if id == "illustration"}
         <div class="legendas">
         <div class="legenda"> {legenda}</div>
+        {#if legenda2 == 'Clique nos botões abaixo' }
+        <div class="legenda2combotao"> 
+          <span>Clique nos botões &nbsp</span>
+          <button data-tooltip="Botão" class="image-button">+</button>
+          <span> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  abaixo</span>
+        </div>
+        {:else}
         <div class="legenda2"> {legenda2}</div>
+        {/if}
        </div>
         <div class="container">
             <div class="image-container">
@@ -166,7 +174,7 @@ $: {
                   <p style="display:flex;align-items:center">{legendaEsquerda}</p>
                 </div>
                <!--reseta / images iniciais-->
-                <button data-tooltip="Clique nos botões" class="image-button" style="top: 68%; left: 63%;" on:click={() => (currentImageEsquerda = f01_esquerda) && (currentImageDireita = f01_direita)}>+</button>
+                <!-- <button data-tooltip="Clique nos botões" class="image-button" style="top: 68%; left: 63%;" on:click={() => (currentImageEsquerda = f01_esquerda) && (currentImageDireita = f01_direita)}>+</button> -->
                 <!--arquibancada-->
                 <button data-tooltip="Arquibancadas" class="image-button" style="top: 53%; left: 40%;" on:click={() => (currentImageEsquerda = f05_esquerda) && (currentImageDireita = f05_direita)}>+</button>
                 <!--fachada-->
@@ -248,12 +256,27 @@ $: {
     font-size: var(--16px);
     
 }
+.legenda2combotao{
+  
+    flex-direction: row;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1rem; 
+    color: #333; 
+    margin-top: -20px !important;
+    font-size: var(--16px);
+    
+}
 @media (max-width: 640px) {
     .legenda {
         text-align: left;
         margin-left: -1rem;
     }
     .legenda2 {
+        text-align: left;
+        margin-left: -1rem;
+    }
+    .legenda2combotao {
         text-align: left;
         margin-left: -1rem;
     }
