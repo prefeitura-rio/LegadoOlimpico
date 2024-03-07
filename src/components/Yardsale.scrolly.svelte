@@ -484,6 +484,14 @@
 		progress = progress;
 		getProgress();
 	}
+
+
+
+let isMobileDevice = false;
+
+onMount(() => {
+		isMobileDevice = window.innerWidth <= 768;
+});
 </script>
 
 <svelte:window bind:innerHeight={containerHeight} />
@@ -498,23 +506,21 @@
 			bind:clientHeight={stepHeight}
 			bind:clientWidth={stepWidth}
 		>
-			<div >
-				<!-- If it's not the third scrolly, display the comic -->
-				{#if container != "scrolly3"}
-					{#each currentStage as { image,opacity }}
-					<img
-					class={image}
-					src="assets/yardsale/art/{image}.jpg"
-					alt="stageImage"
-					style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity:{opacity};"
-					in:fade={{ delay: 0 }}
-					out:fade
-			/>
+		<div>
+			<!-- If it's not the third scrolly, display the comic -->
+			{#if container != "scrolly3"}
+					{#each currentStage as { image, opacity }}
+							<img
+									class={image}
+									src="assets/yardsale/art/{image}.jpg"
+									alt="stageImage"
+									style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity:{opacity};"
+									in:fade={{ delay: 0 }}
+									out:fade
+							/>
 					{/each}
-					
-				{/if}
-
-			</div>
+			{/if}
+	</div>
 		</div>
 
 		<div class="scrollyContainer">
@@ -751,17 +757,35 @@
 
 		.scrollyBackground {
 			position: sticky;
-			margin: 0% auto;
 			min-height: none;
-			border: 3px solid #000;
+			/* border: 3px solid #000; */
 			margin: auto auto;
 			float: none;
 			width: 105vw;
 			top: 37%;
 			height: 30vh;
-			margin-left: -1.2rem;
+			/* margin-left: -1.2rem; */
 			overflow-x: hidden;
 		}
+		.scrolly{
+			background-color:#e6e5ea;
+			z-index:-9999;
+			position: relative;
+			width: 105vw;
+			margin-left: -1.2rem;
+		}
+		/* .scrollyBackground {
+			position: sticky;
+			min-height: none;
+			border: 3px solid #000;
+			margin: auto auto;
+			float: none;
+			width: 105vw;
+			top: 3vh;
+			height: 100vh;
+			margin-left: -1.2rem;
+			overflow-x: hidden;
+		} */
 		.step > p {
 			width: 90%;
 		}
